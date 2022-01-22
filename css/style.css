@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* 구글폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+/* 기초 설정 */
+div, h1, h2, h3, h4, h5, h6, ol, ul, a, img, html, body, header, section, article, aside {margin: 0; padding: 0;}
+a {text-decoration: none; color: #000;}
+ul, ol, li {list-style: none;}
+img {display: block; font-size: none;}
+html,body {
+  font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/********************* home 화면 설정 **************************/
+/* wrapper 설정 */
+.wrapper {width: 100%; height: 100%;}
+.wrapper ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper ul li {
+    width: 100%; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.wrapper ul li:nth-child(2) {
+    border: 3px solid #FFEFBA;
+    border-top: none;
+    border-bottom: none;
+}
+
+.wrapper ul li:nth-child(1) {background-image: url("https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif");}
+.wrapper ul li:nth-child(2) {background-image: url("https://i.pinimg.com/originals/fe/2d/69/fe2d69dd37645808c324bc7ae242abcf.gif");}
+.wrapper ul li:nth-child(3) {background-image: url("https://i.pinimg.com/originals/a4/b3/70/a4b370d25607eed5c2e3a2fe4cc361b0.gif");}
+
+.wrapper ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.4s;
+    position: relative;
+}
+.wrapper ul li a:hover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+}
+.wrapper ul li a h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    outline: none;
+}
+.wrapper ul li a:hover h1 {
+    top: 40%;
+    opacity: 1;
+    visibility: visible;
+}
+.wrapper ul li:nth-child(1) a h1 {color: #ec38bc; animation: animate1 5s linear infinite;}
+
+@keyframes animate1 {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #ec38bc; text-shadow: none;}
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff; 
+        text-shadow: 0 0 15px #ff00cc,
+        0 0 20px #ff00cc,
+        0 0 40px #ff00cc,
+        0 0 80px #ff00cc,
+        0 0 160px #ff00cc
+    }
+}
+
+.wrapper ul li:nth-child(2) a h1 {color: #56ab2f; animation: animate2 5s linear infinite;}
+
+@keyframes animate2 {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #56ab2f; text-shadow: none;}
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff; 
+        text-shadow: 0 0 15px #a8e063,
+        0 0 20px #a8e063,
+        0 0 40px #a8e063,
+        0 0 80px #a8e063,
+        0 0 160px #a8e063
+    }
+}
+
+.wrapper ul li:nth-child(3) a h1 {color: #2a5298; animation: animate3 5s linear infinite;}
+
+@keyframes animate3 {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #2a5298; text-shadow: none;}
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff; 
+        text-shadow: 0 0 15px #5691c8,
+        0 0 20px #5691c8,
+        0 0 40px #5691c8,
+        0 0 80px #5691c8,
+        0 0 160px #5691c8
+    }
+}
+
+
+/* *********** container 설정 ************* */
+/* container 전체 설정 */
+.container {width: 100%; height: 100%;}
+
+/* container_bg 배경설정 */
+.container_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/79/7f/ea/797fea56f2fe8235f1be79a0d26e03a9.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  /* 배경화면 저작권자: https://www.pinterest.co.kr/pin/154248355974614860/ */
+}
+.container_bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* header 설정 */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.8);
+}
+
+header ul {
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+header ul li {
+  width: 25%; 
+  height: 100%;
+  background-color: #eee;
+  border-right: 1px solid #111;
+  box-sizing: border-box;
+}
+header ul li:nth-child(4) {border-right: none;}
+header ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+header ul li:nth-child(1) a {font-size: 40px; text-shadow: none; color: brown;}
+
+/* section  설정 */
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+  padding: 15px;
+  /* padding: 0 15px 15px 15px; */
+  box-sizing: border-box;
+}
+
+/* article 설정 */
+article {
+  width: 100%;
+  height: auto;
+  background-color: tomato;
+  margin-bottom: 15px;
+}
+article a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+article a img{
+  display: block;
+  font-size: none;
+  width: 100%;
+  height: 100%;
+  
+}
