@@ -32,5 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // 기타 제이쿼리 설정
 $(document).ready(function () {
 
+    //위로 가기 버튼이 첫 화면 내려가면 나오고 그 다음부터 누르면 맨위로 간다.
+    $(window).scroll(function () {
+        //화면 스크롤 값을 알아본다.
+        var ht = $(this).scrollTop();
+        //        console.log(sc);
+
+        //화면 스크롤이 200 이상 내려가면 네비게이션이 탑에 고정된다.
+        if (ht > 569) {
+            $('header .head_btn').removeClass('on');
+            $('header .head_btn').addClass('on');
+        };
+        //화면 스크롤이 200 이상 올라가면 네비게이션이 원 위치로 돌아간다.
+        if (ht < 569) {
+            $('header .head_btn').removeClass('on');
+        };
+    });
+
+    //위로 가기 버튼을 클릭하면 사이트 탑으로 이동한다.
+    $('header .head_btn').click(function (e) {
+        //a태그 성질을 죽여서 누르면 화면 위로 이동하는 문제해결
+        e.preventDefault();
+
+        var ht = $('header').height();
+        //header의 전체 높이가 50이다. 그냥 ht 하면 header 아래에 온다. 그래서 그곳 위로 올라가라고 -50을 줬다.
+        $('html, body').stop().animate({ 'scrollTop': ht - 50 }, 800);
+    });
 
 });
