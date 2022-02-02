@@ -128,13 +128,6 @@ html,body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: #b92b27;   */
-  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #1565C0, #b92b27);   */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #1565C0, #b92b27);  */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   background-image: url("https://i.pinimg.com/originals/79/7f/ea/797fea56f2fe8235f1be79a0d26e03a9.gif");
   background-repeat: no-repeat;
   background-position: center;
@@ -159,7 +152,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: auto;
   background-color: #eee;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 }
@@ -171,12 +164,11 @@ header .head_btn {
   right: 4%;
   z-index: 30;
   opacity: 0;
-  
 }
 header .head_btn.on {
   opacity: 1;
 }
-header .head_btn a {
+header .head_btn a i{
   color: rgba(0,0,0,0.9);
   padding: 0px 12px;
   background-color: rgba(255,255,255,0.6);
@@ -187,7 +179,7 @@ header .head_btn a {
 
 header ul {
   width: 100%; 
-  height: 100%; 
+  height: 50px; 
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -211,13 +203,149 @@ header ul li a {
   color: #eee;
   text-shadow: 0px 0px 5px rgba(0,0,0,1);
 }
-header ul li:nth-child(1) a {font-size: 40px; text-shadow: none; color: brown;}
+header ul li:nth-child(1) a i{
+  font-size: 40px; 
+  text-shadow: none; 
+  color: brown;
+}
+
+/* 뮤직박스 */
+.music_box {
+  width: 100%; 
+  height: auto; 
+  overflow: hidden;
+}
+
+/* 뮤직박스 세부설정 */
+#myProgress {
+  width: 100%;
+  background-color: #d9d9f2; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #ffc266;
+  border-radius: 10px;
+}
+
+.logo {
+  fill: red;
+}
+
+.btn-action{
+  cursor: pointer;
+  padding-top: 10px;
+  width: 30px;
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 뮤직박스 맨 위쪽 패딩값 설정 */
+.infos-ctn{padding-top: 2px;}
+
+.btn-ctn > div {
+ padding: 5px;
+ margin-top: 8px;
+ /* 뮤직박스 크기 때문에 하단 마진을 생략한다. */
+ /* margin-bottom: 18px; */
+}
+
+.infos-ctn > div {
+ margin-bottom: 8px;
+ color: #ffc266;
+ /* 뮤직박스 크기 때문에 크기를 줄였다. */
+ font-size: 12px;
+}
+
+.first-btn{
+  margin-left: 3px;
+}
+
+.duration{
+  margin-left: 10px;
+}
+
+.title{
+  margin-left: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+/* 뮤직박스 전체 */
+.player-ctn{
+  /* border-radius: 15px; */
+  width: 100%;
+  padding: 10px;
+  background-color: #373737;
+  /* margin:auto; */
+  /* margin-top: 10px; */
+  box-sizing: border-box;
+}
+
+.playlist-track-ctn{
+  display: flex;
+  background-color: #464646;
+  /* 크기 때문에 하단 플레이 리스트의 상단 마진 생략 */
+  /* margin-top: 3px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playlist-track-ctn > div{
+  margin:10px;
+  /* 하단에 음악 리스트 메뉴가 안나오게 하려고 none 해줬따. */
+  display: none;
+}
+.playlist-info-track{
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #e9cc95;
+  font-size: 14px;
+  pointer-events: none;
+}
+.playlist-ctn{
+  /* 크기 때문에 상단 메뉴 전테 하단 패딩을 줄였다. */
+   /* padding-bottom: 20px; */
+}
+.active-track{
+  background: #4d4d4d;
+  color: #ffc266 !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #ffc266 !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* 하단 멈춤, 플레이, 다음곡 텍스트 크기 설정 */
+.fas{
+  color: #ffc266;
+  font-size: 20px;
+}
+/* **************************************************************** */
+
 
 /* section  설정 */
 section {
   width: 100%;
   height: auto;
-  padding: 100px 0px 10px 0px;
+  padding: 200px 0px 10px 0px;
   box-sizing: border-box;
 }
 

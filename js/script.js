@@ -1,3 +1,4 @@
+
 // lazy loading 기능으로 안보이는 영역의 이미지는 불러오지 않아서 렉이 줄어든다.
 document.addEventListener("DOMContentLoaded", function () {
     var lazyloadImages = document.querySelectorAll("img.lazy");
@@ -28,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
 });
+
+
 
 // 기타 제이쿼리 설정
 $(document).ready(function () {
