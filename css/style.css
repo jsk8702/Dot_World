@@ -17,107 +17,74 @@ html,body {
 
 /********************* home 화면 설정 **************************/
 /* wrapper 설정 */
-.wrapper {width: 100%; height: 100%;}
-.wrapper ul {
-    width: 100%;
+.wrapper {width: 100vw; height: 100vh; }
+
+/* 사이트 바로가기 배경 설정 */
+.wrapper a {
+  width: 100%; 
+  height: 100%; 
+  display: block;
+  position: relative;
+}
+.wrapper a h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #eee;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-shadow: 5px 5px 5px #000;
+}
+.wrapper a ul {
+    width: auto;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.wrapper ul li {
+.wrapper a ul li {
     width: 100%; 
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-.wrapper ul li:nth-child(2) {
+.wrapper a ul li:nth-child(2) {
     border: 3px solid #FFEFBA;
     border-top: none;
     border-bottom: none;
 }
 
-.wrapper ul li:nth-child(1) {background-image: url("https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif");}
-.wrapper ul li:nth-child(2) {background-image: url("https://i.pinimg.com/originals/fe/2d/69/fe2d69dd37645808c324bc7ae242abcf.gif");}
-.wrapper ul li:nth-child(3) {background-image: url("https://i.pinimg.com/originals/a4/b3/70/a4b370d25607eed5c2e3a2fe4cc361b0.gif");}
+.wrapper a ul li:nth-child(1) {background-image: url("https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif");}
+.wrapper a ul li:nth-child(2) {background-image: url("https://i.pinimg.com/originals/fe/2d/69/fe2d69dd37645808c324bc7ae242abcf.gif");}
+.wrapper a ul li:nth-child(3) {background-image: url("https://i.pinimg.com/originals/a4/b3/70/a4b370d25607eed5c2e3a2fe4cc361b0.gif");}
 
-.wrapper ul li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.2);
-    transition: all 0.4s;
-    position: relative;
+/* 인사말 설정 */
+.wrapper a .content {
+  display: block;
+  width: 90%;
+  height: 30%;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid dodgerblue;
+  border-radius: 10px;
+  color: #eee;
+  box-sizing: border-box;
 }
-.wrapper ul li a:hover {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0);
-}
-.wrapper ul li a h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.4s;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    outline: none;
-}
-.wrapper ul li a:hover h1 {
-    top: 40%;
-    opacity: 1;
-    visibility: visible;
-}
-.wrapper ul li:nth-child(1) a h1 {color: #ec38bc; animation: animate1 5s linear infinite;}
-
-@keyframes animate1 {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #ec38bc; text-shadow: none;}
-    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
-        color: #fff; 
-        text-shadow: 0 0 15px #ff00cc,
-        0 0 20px #ff00cc,
-        0 0 40px #ff00cc,
-        0 0 80px #ff00cc,
-        0 0 160px #ff00cc
-    }
-}
-
-.wrapper ul li:nth-child(2) a h1 {color: #56ab2f; animation: animate2 5s linear infinite;}
-
-@keyframes animate2 {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #56ab2f; text-shadow: none;}
-    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
-        color: #fff; 
-        text-shadow: 0 0 15px #a8e063,
-        0 0 20px #a8e063,
-        0 0 40px #a8e063,
-        0 0 80px #a8e063,
-        0 0 160px #a8e063
-    }
-}
-
-.wrapper ul li:nth-child(3) a h1 {color: #2a5298; animation: animate3 5s linear infinite;}
-
-@keyframes animate3 {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {color: #2a5298; text-shadow: none;}
-    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
-        color: #fff; 
-        text-shadow: 0 0 15px #5691c8,
-        0 0 20px #5691c8,
-        0 0 40px #5691c8,
-        0 0 80px #5691c8,
-        0 0 160px #5691c8
-    }
-}
+.wrapper a .content > p {font-size: 12px;}
+.wrapper a .content h3 {margin-bottom: 10px; font-size: 25px; text-shadow: 0 0 5px rgba(255,255,255,0.8);}
+.wrapper a .content span {font-weight: bold; color: #FFEFBA;}
 
 
-/* *********** container 설정 ************* */
+
+
+
+/* *********** index 메인 화면 설정 ************* */
 /* container 전체 설정 */
 .container {width: 100%; height: 100%;}
 
@@ -177,37 +144,61 @@ header .head_btn a i{
 }
 
 
-header ul {
+/* 헤더 메뉴 설정 */
+header .header_menu {
   width: 100%; 
   height: 50px; 
   display: flex; 
   justify-content: center; 
   align-items: center;
 }
-header ul li {
-  width: 25%; 
-  height: 100%;
-  background-color: #eee;
-  border-right: 1px solid #111;
-  box-sizing: border-box;
-}
-header ul li:nth-child(4) {border-right: none;}
-header ul li a {
+header .header_menu > li {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  width: 100%; 
-  height: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  color: #eee;
-  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+  align-items: center;
 }
-header ul li:nth-child(1) a i{
+header .header_menu li:nth-child(1) a i {
   font-size: 40px; 
   text-shadow: none; 
   color: brown;
 }
+header .header_menu li:nth-child(1) {width: 20%; height: 100%;}
+header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
+
+/* 헤더 메뉴의 nav 설정 */
+header .header_menu li .header_nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_menu li .header_nav > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333%;
+  height: 100%;
+  background-color: #eee;
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+header .header_menu li .header_nav > li.on {
+  background-color: rgba(0,0,0,0.6);
+  color: #111;
+  text-shadow: 0px 0px 5px rgba(255,255,255,1);
+  /* border-right: 1px solid #111;
+  border-left: 1px solid #111; */
+}
+/* header .header_menu li .header_nav > li:nth-child(1) {border-left: none;} 
+header .header_menu li .header_nav > li:nth-child(3) {border-right: none;} */
+
 
 /* 뮤직박스 */
 .music_box {
@@ -312,10 +303,8 @@ header ul li:nth-child(1) a i{
   font-size: 14px;
   pointer-events: none;
 }
-.playlist-ctn{
-  /* 크기 때문에 상단 메뉴 전테 하단 패딩을 줄였다. */
-   /* padding-bottom: 20px; */
-}
+/* 크기 때문에 상단 메뉴 전테 하단 패딩을 줄였다. */
+/* .playlist-ctn{padding-bottom: 20px;} */
 .active-track{
   background: #4d4d4d;
   color: #ffc266 !important;
@@ -323,9 +312,7 @@ header ul li:nth-child(1) a i{
   
 }
 
-.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
-  color: #ffc266 !important;
-}
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{color: #ffc266 !important;}
 
 
 .playlist-btn-play{
@@ -334,20 +321,21 @@ header ul li:nth-child(1) a i{
   padding-bottom: 5px;
 }
 /* 하단 멈춤, 플레이, 다음곡 텍스트 크기 설정 */
-.fas{
-  color: #ffc266;
-  font-size: 20px;
-}
-/* **************************************************************** */
+.fas{color: #ffc266; font-size: 20px;}
+
+/**********************music box setup********************************************/
 
 
 /* section  설정 */
 section {
+  position: absolute;
   width: 100%;
   height: auto;
   padding: 200px 0px 10px 0px;
   box-sizing: border-box;
+  display: none;
 }
+section.active {display: block;}
 
 /* article 설정 */
 article {

@@ -42,12 +42,12 @@ $(document).ready(function () {
         //        console.log(sc);
 
         //화면 스크롤이 200 이상 내려가면 네비게이션이 탑에 고정된다.
-        if (ht > 569) {
+        if (ht > 469) {
             $('header .head_btn').removeClass('on');
             $('header .head_btn').addClass('on');
         };
         //화면 스크롤이 200 이상 올라가면 네비게이션이 원 위치로 돌아간다.
-        if (ht < 569) {
+        if (ht < 469) {
             $('header .head_btn').removeClass('on');
         };
     });
@@ -58,8 +58,25 @@ $(document).ready(function () {
         e.preventDefault();
 
         var ht = $('header').height();
-        //header의 전체 높이가 50이다. 그냥 ht 하면 header 아래에 온다. 그래서 그곳 위로 올라가라고 -50을 줬다.
-        $('html, body').stop().animate({ 'scrollTop': ht - 50 }, 800);
+        //그냥 ht 하면 header 아래에 온다. header의 전체높이 + section 의 padding-top 200을 계산해서 화면 위로 가라고 -200을 줬다.
+        $('html, body').stop().animate({ 'scrollTop': ht - 200 }, 800);
+    });
+
+
+    //헤더 메뉴를 누르면 해당 section이 나온다.
+    $('.header_nav > li').click(function (e) {
+        e.preventDefault();
+
+        //헤더의 li 인덱스 번호를 가져온다. 
+        var uNum = $(this).index();
+
+        $('section').removeClass('active');
+        // 홈버튼 빼고 3개니까 인덱스가 1부터 시작해야 되서 1 더한다.
+        $('section').eq(uNum).addClass('active');
+
+        //탭 메뉴 색상이 클릭하면 변경된다.
+        $('.header_nav > li').removeClass('on');
+        $(this).addClass('on');
     });
 
 });
