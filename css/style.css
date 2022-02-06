@@ -28,7 +28,7 @@ html,body {
 }
 .wrapper > a > h1 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   color: #eee;
   transform: translate(-50%, -50%);
@@ -84,6 +84,7 @@ html,body {
 }
 .wrapper > a > .content > p {font-size: 16px;}
 .wrapper > a > .content > p span {font-weight: bold; color: #FFEFBA;}
+.wrapper > a > .content > h4 {font-weight: bold; font-size: 12px;}
 
 
 
