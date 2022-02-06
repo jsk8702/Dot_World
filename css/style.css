@@ -64,7 +64,8 @@ html,body {
 .wrapper > a > .content {
   display: block;
   width: 90%;
-  height: 30%;
+  height: auto;
+  padding: 5px;
   background-color: rgba(0,0,0,0.7);
   text-align: center;
   position: absolute;
