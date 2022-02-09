@@ -43,7 +43,23 @@ var listAudio = [
         name: "S.T.A.L.K.E.R. - Campfire song",
         file: "music/3. Campfire song.mp3",
         duration: "03:08"
+    },
+    {
+        name: "Alina Gingertail - Hope/Dirt Theme(HOMM4)",
+        file: "music/4. Hope  Dirt Theme.mp3",
+        duration: "02:41"
+    },
+    {
+        name: "Dryante Zan - Sea Theme(HOMM4)",
+        file: "music/5. Sea Theme.mp3",
+        duration: "02:42"
+    },
+    {
+        name: "The Wellermen - The Wellermen",
+        file: "music/6. The Wellermen.mp3",
+        duration: "02:15"
     }
+
 ]
 
 for (var i = 0; i < listAudio.length; i++) {

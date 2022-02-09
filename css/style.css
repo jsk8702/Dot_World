@@ -166,10 +166,15 @@ header .header_menu > li {
 header .header_menu li:nth-child(1) a i {
   font-size: 40px; 
   text-shadow: none; 
-  color: brown;
+  color: #111;
+  text-shadow: 0px 0px 5px gray;
 }
 header .header_menu li:nth-child(1) {width: 20%; height: 100%;}
 header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
+
+
+/* 헤더 홈 서브메뉴 */
+
 
 /* 헤더 메뉴의 nav 설정 */
 header .header_menu li .header_nav {
