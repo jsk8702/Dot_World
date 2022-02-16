@@ -163,7 +163,14 @@ header .header_menu > li {
   justify-content: center;
   align-items: center;
 }
-header .header_menu li:nth-child(1) a i {
+header .header_menu li:nth-child(1) > a i.home_btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   font-size: 40px; 
   text-shadow: none; 
   color: #111;
@@ -173,7 +180,6 @@ header .header_menu li:nth-child(1) {width: 20%; height: 100%;}
 header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
 
 
-/* 헤더 홈 서브메뉴 */
 
 
 /* 헤더 메뉴의 nav 설정 */

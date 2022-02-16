@@ -58,6 +58,16 @@ var listAudio = [
         name: "The Wellermen - The Wellermen",
         file: "music/6. The Wellermen.mp3",
         duration: "02:15"
+    },
+    {
+        name: "Eileen - Shchedryk",
+        file: "music/7. Shchedryk.mp3",
+        duration: "02:39"
+    },
+    {
+        name: "World of Tanks - Studzianki",
+        file: "music/8. Studzianki.mp3",
+        duration: "02:29"
     }
 
 ]
