@@ -131,23 +131,44 @@ header {
 }
 
 /* 메인메뉴로 가는 TOP버튼 */
-header .head_btn {
+header .head_btn_up {
   position: fixed;
   bottom: 2%;
-  right: 4%;
+  right: 22%;
   z-index: 30;
   opacity: 0;
 }
-header .head_btn.on {
+header .head_btn_up.on {
   opacity: 1;
 }
-header .head_btn a i{
+header .head_btn_up a i{
   color: rgba(0,0,0,0.9);
   padding: 0px 12px;
   background-color: rgba(255,255,255,0.6);
   font-size: 40px;
   border-radius: 10px;
 }
+
+/* 메인메뉴 밑으로 가는 bottom버튼 */
+header .head_btn_down {
+  position: fixed;
+  bottom: 2%;
+  right: 4%;
+  transform: rotate(180deg);
+  z-index: 30;
+  opacity: 0;
+}
+header .head_btn_down.on {
+  opacity: 1;
+}
+header .head_btn_down a i{
+  color: rgba(0,0,0,0.9);
+  padding: 0px 12px;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 40px;
+  border-radius: 10px;
+}
+
 
 
 /* 헤더 메뉴 설정 */

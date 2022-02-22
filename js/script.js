@@ -37,23 +37,31 @@ $(document).ready(function () {
 
     //위로 가기 버튼이 첫 화면 내려가면 나오고 그 다음부터 누르면 맨위로 간다.
     $(window).scroll(function () {
-        //화면 스크롤 값을 알아본다.
+        //화면 상단의 스크롤 값을 알아본다.
         var ht = $(this).scrollTop();
         //        console.log(sc);
 
+        // 화면 하단의 스크롤 값을 알아본다.
+
+
+
+
         //화면 스크롤이 200 이상 내려가면 네비게이션이 탑에 고정된다.
         if (ht > 469) {
-            $('header .head_btn').removeClass('on');
-            $('header .head_btn').addClass('on');
+            $('header .head_btn_up').removeClass('on');
+            $('header .head_btn_down').removeClass('on');
+            $('header .head_btn_up').addClass('on');
+            $('header .head_btn_down').addClass('on');
         };
         //화면 스크롤이 200 이상 올라가면 네비게이션이 원 위치로 돌아간다.
         if (ht < 469) {
-            $('header .head_btn').removeClass('on');
+            $('header .head_btn_up').removeClass('on');
+            $('header .head_btn_down').removeClass('on');
         };
     });
 
     //위로 가기 버튼을 클릭하면 사이트 탑으로 이동한다.
-    $('header .head_btn').click(function (e) {
+    $('header .head_btn_up').click(function (e) {
         //a태그 성질을 죽여서 누르면 화면 위로 이동하는 문제해결
         e.preventDefault();
 
