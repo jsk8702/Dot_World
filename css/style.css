@@ -136,11 +136,11 @@ header .head_btn_up {
   bottom: 2%;
   right: 22%;
   z-index: 30;
-  opacity: 0;
-}
-header .head_btn_up.on {
   opacity: 1;
 }
+/* header .head_btn_up.on {
+  opacity: 1;
+} */
 header .head_btn_up a i{
   color: rgba(0,0,0,0.9);
   padding: 0px 12px;
@@ -156,11 +156,11 @@ header .head_btn_down {
   right: 4%;
   transform: rotate(180deg);
   z-index: 30;
-  opacity: 0;
-}
-header .head_btn_down.on {
   opacity: 1;
 }
+/* header .head_btn_down.on {
+  opacity: 1;
+} */
 header .head_btn_down a i{
   color: rgba(0,0,0,0.9);
   padding: 0px 12px;
