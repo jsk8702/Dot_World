@@ -68,6 +68,11 @@ var listAudio = [
         name: "World of Tanks - Studzianki",
         file: "music/8. Studzianki.mp3",
         duration: "02:29"
+    },
+    {
+        name: "Earth, Wind & Fire - Fantasy",
+        file: "music/9. Fantasy.mp3",
+        duration: "04:38"
     }
 
 ]
