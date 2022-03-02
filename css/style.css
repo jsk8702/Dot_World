@@ -196,6 +196,28 @@ header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
 
 
 
+/* 홈메뉴 리스트 설정 */
+.btn_list {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  width: 150px;
+  height: 200px;
+  background-color: rgba(255,255,255,0.8);
+  border: 4px solid rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  display: none;
+}
+.btn_list > li {
+  width: 150px;
+  height: 25%;
+  display: block;
+}
+.btn_list > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 /* 헤더 메뉴의 nav 설정 */
 header .header_menu li .header_nav {
@@ -360,8 +382,7 @@ section.active {display: block;}
   transform: translate(-50%, -50%);
   width: 100px;
   height: 40px;
-  /* background-color: red; */
-  z-index: 100;
+  z-index: 10;
   
 }
 .section_btn ul {
