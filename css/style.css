@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 /* 기초 설정 */
-div, h1, h2, h3, h4, h5, h6, ol, ul, a, img, html, body, header, section, article, aside {margin: 0; padding: 0;}
+div, h1, h2, h3, h4, h5, h6, ol, ul, li, a, img, html, body, header, section, article, aside {margin: 0; padding: 0;}
 a {text-decoration: none; color: #000;}
 ul, ol, li {list-style: none;}
 img {display: block; font-size: none;}
@@ -199,17 +199,17 @@ header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
 /* 홈메뉴 리스트 설정 */
 .btn_list {
   position: absolute;
-  top: 32%;
+  top: 36%;
   left: 0;
   width: 150px;
   height: 200px;
   background-color: rgba(255,255,255,0.8);
   border: 4px solid rgba(0,0,0,0.8);
   box-sizing: border-box;
-  display: none;
+  /* display: none; */
 }
-.btn_list > li {
-  width: 150px;
+.btn_list li.list_contents {
+  width: 150px; 
   height: 25%;
   display: block;
 }
@@ -377,7 +377,7 @@ section.active {display: block;}
 /* section_btn */
 .section_btn {
   position: fixed;
-  top: 100px;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100px;
