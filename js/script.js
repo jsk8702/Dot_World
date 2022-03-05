@@ -103,7 +103,7 @@ $(document).ready(function () {
         var uNum = $(this).index();
 
         $('section').removeClass('active');
-        // 홈버튼 빼고 3개니까 인덱스가 1부터 시작해야 되서 1 더한다.
+
         $('section').eq(uNum).addClass('active');
 
         //탭 메뉴 색상이 클릭하면 변경된다.
@@ -113,6 +113,22 @@ $(document).ready(function () {
 
     //act1 section의 번호를 누르면 해당 section이 나온다.
     $('.act1 .section_btn ul li').click(function (e) {
+        e.preventDefault();
+
+        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
+        var uNum2 = $(this).index();
+
+        $('.act1 .section_inner').removeClass('active');
+
+        $('.act1 .section_inner').eq(uNum2).addClass('active');
+
+        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
+        $('.section_btn > ul > li').removeClass('on');
+        $(this).addClass('on');
+    });
+
+    //act1 section의 번호를 누르면 해당 section이 나온다.
+    $('.act1 .section_btn_bottom ul li').click(function (e) {
         e.preventDefault();
 
         //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
@@ -143,8 +159,40 @@ $(document).ready(function () {
         $(this).addClass('on');
     });
 
+    //act2 section의 번호를 누르면 해당 section이 나온다.
+    $('.act2 .section_btn_bottom ul li').click(function (e) {
+        e.preventDefault();
+
+        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
+        var uNum2 = $(this).index();
+
+        $('.act2 .section_inner').removeClass('active');
+
+        $('.act2 .section_inner').eq(uNum2).addClass('active');
+
+        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
+        $('.section_btn > ul > li').removeClass('on');
+        $(this).addClass('on');
+    });
+
     //act3 section의 번호를 누르면 해당 section이 나온다.
     $('.act3 .section_btn ul li').click(function (e) {
+        e.preventDefault();
+
+        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
+        var uNum2 = $(this).index();
+
+        $('.act3 .section_inner').removeClass('active');
+
+        $('.act3 .section_inner').eq(uNum2).addClass('active');
+
+        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
+        $('.section_btn > ul > li').removeClass('on');
+        $(this).addClass('on');
+    });
+
+    //act3 section의 번호를 누르면 해당 section이 나온다.
+    $('.act3 .section_btn_bottom ul li').click(function (e) {
         e.preventDefault();
 
         //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 

@@ -182,8 +182,10 @@ header .header_menu > li {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
 }
-header .header_menu li:nth-child(1) > a i.home_btn {
+header .header_menu li:nth-child(1) i.home_btn {
   position: relative;
   width: 100%;
   height: 100%;
@@ -192,12 +194,11 @@ header .header_menu li:nth-child(1) > a i.home_btn {
   align-items: center;
   cursor: pointer;
   font-size: 40px; 
-  text-shadow: none; 
   color: #111;
   text-shadow: 0px 0px 5px gray;
 }
-header .header_menu li:nth-child(1) {width: 20%; height: 100%;}
-header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
+header .header_menu li:nth-child(1) {width: 25%; height: 100%;}
+header .header_menu li:nth-child(2) {width: 75%; height: 100%;}
 
 
 
@@ -206,22 +207,31 @@ header .header_menu li:nth-child(2) {width: 80%; height: 100%;}
   position: absolute;
   top: 33%;
   left: 0;
-  width: 150px;
-  height: 200px;
-  background-color: rgba(255,255,255,0.8);
-  border: 4px solid rgba(0,0,0,0.8);
+  width: 25%;
+  height: auto;
+  /* background-color: rgba(255,255,255,0.8); */
+  background-color: #eee;
+  /* border-top: 1px solid #111; */
   box-sizing: border-box;
   display: none;
 }
-.btn_list li.list_contents {
-  width: 150px; 
-  height: 25%;
-  display: block;
+
+.btn_list li {
+  width: 100%;
+  height: 45px;
+  padding: 2px 0;
+  border-top: 1px solid #111;
 }
 .btn_list > li > a {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0px 0px 5px rgba(0,0,0,1);
 }
 
 /* 헤더 메뉴의 nav 설정 */
@@ -239,7 +249,7 @@ header .header_menu li .header_nav > li {
   width: 33.3333%;
   height: 100%;
   background-color: #eee;
-  
+
   font-size: 20px;
   font-weight: bold;
   color: #eee;
@@ -261,7 +271,6 @@ header .header_menu li .header_nav > li.on {
   height: auto; 
   overflow: hidden;
 }
-
 /* 뮤직박스 세부설정 */
 #myProgress {
   width: 100%;
@@ -269,22 +278,18 @@ header .header_menu li .header_nav > li.on {
   cursor: pointer;
   border-radius: 10px;
 }
-
 #myBar {
   width: 0%;
   height: 5px;
   background-color: #ffc266;
   border-radius: 10px;
 }
-
 .logo {fill: red;}
-
 .btn-action{
   cursor: pointer;
   padding-top: 10px;
   width: 30px;
 }
-
 .btn-ctn, .infos-ctn{
   display: flex;
   align-items: center;
@@ -292,31 +297,25 @@ header .header_menu li .header_nav > li.on {
 }
 /* 뮤직박스 맨 위쪽 패딩값 설정 */
 .infos-ctn{padding-top: 2px;}
-
 .btn-ctn > div {
  padding: 5px;
  margin-top: 8px;
  /* 뮤직박스 크기 때문에 하단 마진을 생략한다. */
  /* margin-bottom: 18px; */
 }
-
 .infos-ctn > div {
  margin-bottom: 8px;
  color: #ffc266;
  /* 뮤직박스 크기 때문에 크기를 줄였다. */
  font-size: 12px;
 }
-
 .first-btn{margin-left: 3px;}
-
 .duration{margin-left: 10px;}
-
 .title{
   margin-left: 10px;
   width: 90%;
   text-align: center;
 }
-
 /* 뮤직박스 전체 */
 .player-ctn{
   /* border-radius: 15px; */
@@ -327,7 +326,6 @@ header .header_menu li .header_nav > li.on {
   /* margin-top: 10px; */
   box-sizing: border-box;
 }
-
 .playlist-track-ctn{
   display: flex;
   background-color: #464646;
@@ -336,7 +334,6 @@ header .header_menu li .header_nav > li.on {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .playlist-track-ctn > div{
   margin:10px;
   /* 하단에 음악 리스트 메뉴가 안나오게 하려고 none 해줬따. */
@@ -382,12 +379,12 @@ section.active {display: block;}
 /* section_btn */
 .section_btn {
   position: fixed;
-  top: 23%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100px;
   height: 40px;
-  z-index: 10;
+  z-index: 100;
   
 }
 .section_btn ul {
