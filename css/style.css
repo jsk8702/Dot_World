@@ -367,7 +367,7 @@ header .header_menu li .header_nav > li.on {
 
 /* section  설정 */
 section {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: auto;
   padding: 200px 0px 10px 0px;
@@ -378,8 +378,8 @@ section.active {display: block;}
 
 /* section_btn */
 .section_btn {
-  position: fixed;
-  top: 22%;
+  position: absolute;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100px;
