@@ -127,40 +127,8 @@ $(document).ready(function () {
         $(this).addClass('on');
     });
 
-    //act1 section의 번호를 누르면 해당 section이 나온다.
-    $('.act1 .section_btn_bottom ul li').click(function (e) {
-        e.preventDefault();
-
-        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
-        var uNum2 = $(this).index();
-
-        $('.act1 .section_inner').removeClass('active');
-
-        $('.act1 .section_inner').eq(uNum2).addClass('active');
-
-        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
-        $('.section_btn > ul > li').removeClass('on');
-        $(this).addClass('on');
-    });
-
     //act2 section의 번호를 누르면 해당 section이 나온다.
     $('.act2 .section_btn ul li').click(function (e) {
-        e.preventDefault();
-
-        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
-        var uNum2 = $(this).index();
-
-        $('.act2 .section_inner').removeClass('active');
-
-        $('.act2 .section_inner').eq(uNum2).addClass('active');
-
-        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
-        $('.section_btn > ul > li').removeClass('on');
-        $(this).addClass('on');
-    });
-
-    //act2 section의 번호를 누르면 해당 section이 나온다.
-    $('.act2 .section_btn_bottom ul li').click(function (e) {
         e.preventDefault();
 
         //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
@@ -191,20 +159,16 @@ $(document).ready(function () {
         $(this).addClass('on');
     });
 
-    //act3 section의 번호를 누르면 해당 section이 나온다.
-    $('.act3 .section_btn_bottom ul li').click(function (e) {
-        e.preventDefault();
+    // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+    $(".header_menu li").click(function () {
+        var submenu = $("ul.btn_list");
 
-        //섹션 번호메뉴의 li 인덱스 번호를 가져온다. 
-        var uNum2 = $(this).index();
-
-        $('.act3 .section_inner').removeClass('active');
-
-        $('.act3 .section_inner').eq(uNum2).addClass('active');
-
-        //섹션 번호 메뉴를 선택한 번호의 색상이 바뀐다.
-        $('.section_btn > ul > li').removeClass('on');
-        $(this).addClass('on');
+        // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+        if (submenu.is(":visible")) {
+            submenu.slideUp();
+        } else {
+            submenu.slideDown();
+        }
     });
 
 });

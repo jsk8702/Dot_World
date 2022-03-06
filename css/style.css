@@ -209,9 +209,7 @@ header .header_menu li:nth-child(2) {width: 75%; height: 100%;}
   left: 0;
   width: 25%;
   height: auto;
-  /* background-color: rgba(255,255,255,0.8); */
   background-color: #eee;
-  /* border-top: 1px solid #111; */
   box-sizing: border-box;
   display: none;
 }
@@ -379,7 +377,7 @@ section.active {display: block;}
 /* section_btn */
 .section_btn {
   position: absolute;
-  top: 75%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100px;
