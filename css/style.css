@@ -376,8 +376,8 @@ section.active {display: block;}
 
 /* section_btn */
 .section_btn {
-  position: absolute;
-  top: 78%;
+  position: fixed;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100px;
@@ -416,7 +416,6 @@ section.active {display: block;}
   position: absolute;
   width: 100%;
   height: auto;
-  /* background-color: red; */
   display: none;
 }
 .section_inner.active {display: block;}

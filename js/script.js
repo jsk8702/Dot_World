@@ -159,8 +159,8 @@ $(document).ready(function () {
         $(this).addClass('on');
     });
 
-    // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-    $(".header_menu li").click(function () {
+    // menu 클래스 li 클릭했을때 서브 메뉴 .btn_list 가 나온다.
+    $(".menu_btn").click(function () {
         var submenu = $("ul.btn_list");
 
         // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기

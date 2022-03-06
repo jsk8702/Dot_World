@@ -73,6 +73,31 @@ var listAudio = [
         name: "Earth, Wind & Fire - Fantasy",
         file: "music/9. Fantasy.mp3",
         duration: "04:38"
+    },
+    {
+        name: "Paul Romero - Haven Theme(HOMM4)",
+        file: "music/10. Haven Theme.mp3",
+        duration: "03:14"
+    },
+    {
+        name: "HOMM6 - Summer Plains(HOMM6)",
+        file: "music/11. Summer Plains.mp3",
+        duration: "03:01"
+    },
+    {
+        name: "Faun - Tanz mit mir",
+        file: "music/12. Tanz mit mir.mp3",
+        duration: "03:03"
+    },
+    {
+        name: "Elvis Stanic - Naranca (Gingertail Cover)",
+        file: "music/13. Naranca.mp3",
+        duration: "03:19"
+    },
+    {
+        name: "Sting - Shape of My Heart",
+        file: "music/14. Shape of My Heart.mp3",
+        duration: "04:40"
     }
 
 ]
