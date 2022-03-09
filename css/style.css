@@ -377,13 +377,12 @@ section.active {display: block;}
 /* section_btn */
 .section_btn {
   position: fixed;
-  top: 160px;
+  top: 140px;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 100px;
+  width: auto;
   height: 40px;
   z-index: 100;
-  
 }
 .section_btn ul {
   width: 100%;
@@ -403,7 +402,9 @@ section.active {display: block;}
   border-radius: 50%;
   color: #ffc266;
   background-color: #4d4d4d;
+  margin-right: 10px;
 }
+.section_btn ul li:last-child {margin-right: 0;}
 .section_btn ul li.on {
   color: #111;
   background-color: #eee;
