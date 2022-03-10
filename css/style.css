@@ -377,7 +377,7 @@ section.active {display: block;}
 /* section_btn */
 .section_btn {
   position: fixed;
-  top: 140px;
+  top: 164px;
   left: 50%;
   transform: translate(-50%, 0%);
   width: auto;
