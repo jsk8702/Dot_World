@@ -98,6 +98,16 @@ var listAudio = [
         name: "Sting - Shape of My Heart",
         file: "music/14. Shape of My Heart.mp3",
         duration: "04:40"
+    },
+    {
+        name: "Faun - Federkleid",
+        file: "music/15. Federkleid.mp3",
+        duration: "04:17"
+    },
+    {
+        name: "HOMM2 - City Of The Knight",
+        file: "music/16. City Of The Knight.mp3",
+        duration: "02:25"
     }
 
 ]
