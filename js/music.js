@@ -30,85 +30,96 @@ function createTrackItem(index, name, duration) {
 
 var listAudio = [
     {
-        name: "Cyberpunk 2077 - The Rebel Path(Cello Version)",
+        name: "1. Cyberpunk 2077 - The Rebel Path(Cello Version)",
         file: "music/1. The Rebel Path.mp3",
         duration: "04:20"
     },
     {
-        name: "Jonas Lefvert - Order Town Theme(HOMM4)",
+        name: "2. Jonas Lefvert - Order Town Theme(HOMM4)",
         file: "music/2. Order Town Theme.mp3",
         duration: "02:45"
     },
     {
-        name: "S.T.A.L.K.E.R. - Campfire song",
+        name: "3. S.T.A.L.K.E.R. - Campfire song",
         file: "music/3. Campfire song.mp3",
         duration: "03:08"
     },
     {
-        name: "Alina Gingertail - Hope/Dirt Theme(HOMM4)",
+        name: "4. Alina Gingertail - Hope/Dirt Theme(HOMM4)",
         file: "music/4. Hope  Dirt Theme.mp3",
         duration: "02:41"
     },
     {
-        name: "Dryante Zan - Sea Theme(HOMM4)",
+        name: "5. Dryante Zan - Sea Theme(HOMM4)",
         file: "music/5. Sea Theme.mp3",
         duration: "02:42"
     },
     {
-        name: "The Wellermen - The Wellermen",
+        name: "6. The Wellermen - The Wellermen",
         file: "music/6. The Wellermen.mp3",
         duration: "02:15"
     },
     {
-        name: "Eileen - Shchedryk",
+        name: "7. Eileen - Shchedryk",
         file: "music/7. Shchedryk.mp3",
         duration: "02:39"
     },
     {
-        name: "World of Tanks - Studzianki",
+        name: "8. World of Tanks - Studzianki",
         file: "music/8. Studzianki.mp3",
         duration: "02:29"
     },
     {
-        name: "Earth, Wind & Fire - Fantasy",
+        name: "9. Earth, Wind & Fire - Fantasy",
         file: "music/9. Fantasy.mp3",
         duration: "04:38"
     },
     {
-        name: "Paul Romero - Haven Theme(HOMM4)",
+        name: "10. Paul Romero - Haven Theme(HOMM4)",
         file: "music/10. Haven Theme.mp3",
         duration: "03:14"
     },
     {
-        name: "HOMM6 - Summer Plains(HOMM6)",
+        name: "11. HOMM6 - Summer Plains(HOMM6)",
         file: "music/11. Summer Plains.mp3",
         duration: "03:01"
     },
     {
-        name: "Faun - Tanz mit mir",
+        name: "12. Faun - Tanz mit mir",
         file: "music/12. Tanz mit mir.mp3",
         duration: "03:03"
     },
     {
-        name: "Elvis Stanic - Naranca (Gingertail Cover)",
+        name: "13. Elvis Stanic - Naranca (Gingertail Cover)",
         file: "music/13. Naranca.mp3",
         duration: "03:19"
     },
     {
-        name: "Sting - Shape of My Heart",
+        name: "14. Sting - Shape of My Heart",
         file: "music/14. Shape of My Heart.mp3",
         duration: "04:40"
     },
     {
-        name: "Faun - Federkleid",
+        name: "15. Faun - Federkleid",
         file: "music/15. Federkleid.mp3",
         duration: "04:17"
     },
     {
-        name: "HOMM2 - City Of The Knight",
+        name: "16. HOMM2 - City Of The Knight",
         file: "music/16. City Of The Knight.mp3",
         duration: "02:25"
+    },
+    {
+        name: "17. Pascal Letoublon - Friendships",
+        file: "music/17. Friendships.mp3",
+        duration: "03:06"
+    },
+    {
+        name: "18. HOMM5 - Sylvan Town Theme",
+        file: "music/18. Sylvan Town Theme.mp3",
+        duration: "02:21"
     }
+
 
 ]
 
