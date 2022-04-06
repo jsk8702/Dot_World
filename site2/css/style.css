@@ -10,6 +10,7 @@
     z-index: 100;
     background-color: yellow;
 }
+
 .home_btn a {
     display: flex;
     justify-content: center;
@@ -22,7 +23,7 @@
 
 /* wrapper 설정 */
 .wrapper {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     background-image: url("https://i.pinimg.com/originals/29/cb/d5/29cbd5c73bac071fb7ade09bcac4feb8.gif");
     background-position: center;
@@ -32,35 +33,65 @@
 
 
 /* header */
-header {width: 100%; height: 60px;}
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.6;
+}
 
+/* 헤더의 햄버거 메뉴 */
+header .menu_bar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .menu_bar h1 i {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+/* 헤더의 네미게이션 메뉴 */
 header .nav {
-    width: 100%; 
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 header .nav li {
-    width: 25%; 
-    height: 100%; 
-    background: #373B44;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: 0.6;
+    width: 25%;
+    height: 100%;
+
 }
 
 header .nav li.on {
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #240b36, #c31432);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header .nav li h1 {
     width: 100%;
     height: 100%;
-    font-size: 1.4em;
+    font-size: 1.1rem;
     font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     justify-content: center;
@@ -69,17 +100,50 @@ header .nav li h1 {
     color: #fff;
 }
 
-header .nav li:nth-child(1) h1 {font-size: 1.8em;}
 
 /* ****************header end***************** */
 
+/******************section ******************* */
 section {
     width: 100%;
     height: 580px;
     /* background-color: #666; */
 }
+
+section article {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+section article.active {
+    display: block;
+}
+
+section article:nth-child(1) {
+    background-color: #111;
+}
+
+section article:nth-child(2) {
+    background-color: #222;
+}
+
+section article:nth-child(3) {
+    background-color: #333;
+}
+
+section article:nth-child(4) {
+    background-color: #444;
+}
+
+/******************section end ******************* */
+
+
+/******************footer ******************* */
 footer {
     width: 100%;
     height: 60px;
     background-color: #222;
 }
+
+/******************footer end ******************* */

@@ -12,16 +12,20 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- 외부 스크립트 시트 -->
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <div class="home_btn"><a href="..\index.html">Test Button_홈으로!</a></div>
     <div class="wrapper">
         <header>
+            <div class="menu_bar">
+                <h1><i class="fas fa-bars"></i></h1>
+            </div>
             <ul class="nav">
-                <li>
-                    <h1><i class="fas fa-bars"></i></h1>
-                </li>
                 <li class="on">
                     <h1>도트</h1>
                 </li>
@@ -31,9 +35,15 @@
                 <li>
                     <h1>사진</h1>
                 </li>
+                <li>
+                    <h1>그림</h1>
+                </li>
             </ul>
         </header>
         <section>
+            <article class="active"></article>
+            <article></article>
+            <article></article>
             <article></article>
         </section>
         <footer></footer>

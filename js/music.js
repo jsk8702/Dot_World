@@ -90,7 +90,7 @@ var listAudio = [
         duration: "03:03"
     },
     {
-        name: "13. Elvis Stanic - Naranca (Gingertail Cover)",
+        name: "13. Elvis Stanic - Naranca(Gingertail Cover)",
         file: "music/13. Naranca.mp3",
         duration: "03:19"
     },
@@ -118,7 +118,28 @@ var listAudio = [
         name: "18. HOMM5 - Sylvan Town Theme",
         file: "music/18. Sylvan Town Theme.mp3",
         duration: "02:21"
+    },
+    {
+        name: "19. Max Brhon - Cyberpunk",
+        file: "music/19. Cyberpunk.mp3",
+        duration: "03:35"
+    },
+    {
+        name: "20. Enchanter - Dragon Age Inquisition(Gingertail Cover)",
+        file: "music/20. Enchanter.mp3",
+        duration: "03:27"
+    },
+    {
+        name: "21. Stalker - Dirge for the Planet (Gingertail Cover)",
+        file: "music/21. Dirge for the Planet.mp3",
+        duration: "04:28"
+    },
+    {
+        name: "22. Max Brhon - The Future",
+        file: "music/22. The Future.mp3",
+        duration: "03:35"
     }
+
 
 
 ]
