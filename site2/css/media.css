@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 반응형 미디어 쿼리 */
+
+/* 모바일( ~ 400px 너비까지 적용) */
+@media screen and (max-width: 401px){
+    
+    /* 헤더 */
+    .header {height: 60px;}
+    
+    /* 헤더 메뉴바 */
+    .header_menu_bar {width: 16%;}
+    .header_menu_bar i {font-size: 36px;}
+
+        /* 헤더 메뉴 */
+    nav {width: 84%;}
+
+    }
+
+

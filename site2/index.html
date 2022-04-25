@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 반응형 미디어쿼리 -->
+    <link rel="stylesheet" href="css/media.css">
     <!-- 제이쿼리cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- 외부 스크립트 시트 -->
@@ -19,35 +21,19 @@
 </head>
 
 <!-- 슬라이더 종류 모음: https://ossam5.tistory.com/148 -->
+<!-- 코딩을 한줄로 이어서 나가고 싶으면 Beautify, css-compact 플러그 인 설치하고 알트+ 쉬프트 + f 눌러서 한줄변환 하고 저장하면 된다. -->
+<!-- 미디어쿼리는 스타일 시트 다음에 링크되어야 적용된다. -->
 
 <body>
-    <div class="home_btn"><a href="..\index.html">Test Button_홈으로!</a></div>
+    <!-- <div class="home_btn"><a href="..\index.html">Test Button_홈으로!</a></div> -->
     <div class="wrapper">
-        <header>
-            <div class="menu_bar">
-                <h1><i class="fas fa-bars"></i></h1>
+        <header class="header">
+            <div class="header_menu_bar">
+                <i class="fas fa-bars"></i>
             </div>
-            <ul class="nav">
-                <li class="on">
-                    <h1>도트</h1>
-                </li>
-                <li>
-                    <h1>일러스트</h1>
-                </li>
-                <li>
-                    <h1>사진</h1>
-                </li>
-                <li>
-                    <h1>그림</h1>
-                </li>
-            </ul>
+            <nav></nav>
         </header>
-        <section>
-            <article class="active"></article>
-            <article></article>
-            <article></article>
-            <article></article>
-        </section>
+        <section></section>
         <footer></footer>
     </div>
 
