@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 .wrapper {
     width: 100%;
@@ -32,4 +32,12 @@ nav {
     width: 95%;
     height: 100%;
     background-color: gold;
+    position: relative;
+}
+
+.nav_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
 }
