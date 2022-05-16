@@ -4,6 +4,9 @@
 /* 모바일( ~ 400px 너비까지 적용) */
 @media screen and (max-width: 401px){
     
+    /* wrapper */
+    .wrapper {width: 100%;}
+
     /* 헤더 */
     .header {height: 60px;}
     
@@ -13,6 +16,10 @@
 
         /* 헤더 메뉴 */
     nav {width: 84%;}
+    .nav_menu {width: 100%; display: none;}
+    .nav_menu li {width: 25%;}
+    .nav_menu li i {font-size: 18px;}
+    .nav_menu li p {font-size: 12px;}
 
     }
 

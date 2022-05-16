@@ -1,9 +1,28 @@
 @charset "utf-8";
 
+/* 대문으로 가는 임시 설정 */
+.gohome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: black;
+}
+
+/* 전체 배경 */
+body {
+    background-image: url('https://i.pinimg.com/originals/07/e8/fa/07e8faaa355eed6a6c5ee718b9d0c83c.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .wrapper {
-    width: 100%;
+    width: 1920px;
     height: 100%;
     background-color: green;
+    margin: 0 auto;
 }
 
 /* 헤더 */
@@ -13,31 +32,80 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 /* 헤더 메뉴바 */
 .header_menu_bar {
-    width: 5%;
+    width: 0%;
     height: 100%;
     background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #eee;
 }
 .header_menu_bar i {font-size: 32px;}
 
-/* 헤더 메뉴 */
+/* 헤더메뉴 */
+.header_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    display: none;
+}
+
+
+/* 네비게이터 메뉴 */
 nav {
-    width: 95%;
+    width: 100%;
     height: 100%;
     background-color: gold;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 400px;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.nav_menu li {
+    width: 20%;
+    height: 100%;
+    background-color: blue;
+    cursor: pointer;
+    color: #eee;
+}
+
+.nav_menu li i {
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.nav_menu li p {
+    font-size: 14px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
