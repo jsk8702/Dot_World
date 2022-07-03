@@ -5,74 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>감성갤러리2</title>
+    <title>감성 갤러리</title>
     <!-- 폰트어썸 cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <!-- 외부 초기화 시트 -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- swpier cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- 반응형 미디어쿼리 -->
     <link rel="stylesheet" href="css/media.css">
-    
 </head>
 
 <!-- 슬라이더 종류 모음: https://ossam5.tistory.com/148 -->
 <!-- 코딩을 한줄로 이어서 나가고 싶으면 Beautify, css-compact 플러그 인 설치하고 알트+ 쉬프트 + f 눌러서 한줄변환 하고 저장하면 된다. -->
 <!-- 미디어쿼리는 스타일 시트 다음에 링크되어야 적용된다. -->
-
 <!-- 모델 사이트: https://www.galleryhyundai.com/main -->
+
+<!-- <li><img src="https://i.pinimg.com/originals/54/5d/c7/545dc7fc35c5a7d6cfd306ff3bbccf90.gif"></li> -->
 
 <body>
     <div class="gohome"><a href="..\index.html">Test Button_홈으로!</a></div>
     <div class="container">
         <header>
-            <div class="header_inner">
-                <ul class="logo">
-                    <li></li>
-                    <li><a href="index.html"><strong>주성이</strong>의 <strong>감성</strong><span>갤러리<strong>2</strong></span></a></li>
-                    <li></li>
-                </ul>
-                <nav>
-                    <ul class="nav_menu">
-                        <li>도트</li>
-                        <li>사진</li>
-                        <li>일러스트</li>
-                        <li>3D</li>
-                        <li>알림판</li>
-                    </ul>
-                </nav>
-            </div>
+          <nav>
+              <ul class="nav-inner">
+                <li><p>감성 갤러리?</p></li>
+                <li><p>공지사항</p></li>
+                <li><p>갤러리</p>
+                  <ul class="gal-inner">
+                    <li><p>도트</p></li>
+                    <li><p>일러스트</p></li>
+                    <li><p>사진</p></li>
+                    <li><p>애니메이션</p></li>
+                    <li><p>기타</p></li>
+                  </ul>
+                </li>
+                <li><p>포트폴리오</p></li>
+                <li><p>음악실</p></li>
+                <li><p>게시판</p></li>
+              </ul>
+          </nav>
         </header>
-        <div class="contents"></div>
-        <footer></footer>
-        
-        <!-- <header class="header">
-            <div class="header_menu_bar">
-                <i class="fas fa-bars"></i>
+        <div class="contents">
+          <!-- 슬라이드 부분 예시 -->
+          <!-- <div class="swiper mySwiper dot1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h2>1</h2>
+                <a href="https://www.pinterest.co.kr/pin/616993217701233126/">
+                  <img src="https://i.pinimg.com/originals/cc/6f/6b/cc6f6bf7407d33b2b4be031a08d2b859.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>2</h2>
+                <a href="https://www.pinterest.co.kr/pin/6192518226924368/">
+                  <img src="https://i.pinimg.com/originals/5c/d9/b7/5cd9b75a732138d7ba5bb62b5855ac6a.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>3</h2>
+                <a href="https://www.pinterest.co.kr/pin/445223113172027742/">
+                  <img src="https://i.pinimg.com/originals/a0/4b/87/a04b8721bc4936581e7d42110b9bc76a.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>4</h2>
+                <a href="https://www.pinterest.co.kr/pin/28147566414813559/">
+                  <img src="https://i.pinimg.com/originals/ae/37/99/ae3799c1114f374948b46398069cf449.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>5</h2>
+                <a href="https://www.pinterest.co.kr/pin/605734218644268544/">
+                  <img src="https://i.pinimg.com/originals/e0/ee/19/e0ee196443325d7d82a6c8a6cc7bf229.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>6</h2>
+                <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                  <img src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>7</h2>
+                <a href="https://www.pinterest.co.kr/pin/77898268547449586/">
+                  <img src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>8</h2>
+                <a href="https://www.pinterest.co.kr/pin/838514024383981507/">
+                  <img src="https://i.pinimg.com/originals/35/2e/a5/352ea54b086d830199aa3628938e6dcc.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>9</h2>
+                <a href="https://www.pinterest.co.kr/pin/18999629670250511/">
+                  <img src="https://i.pinimg.com/originals/34/d7/a3/34d7a3bbe7ab056f213e66c7182dd57e.gif">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <h2>10</h2>
+                <a href="https://www.pinterest.co.kr/pin/74520568825572922/">
+                  <img src="https://i.pinimg.com/originals/a4/b3/70/a4b370d25607eed5c2e3a2fe4cc361b0.gif">
+                </a>
+              </div>
             </div>
-            
-            <nav>
-                <h1>감성갤러리2</h1>
-                <ul class="nav_menu">
-                    <li><i class="fas fa-chess-board"></i><p>도트</p></li>
-                    <li><i class="fas fa-image"></i><p>일러스트</p></li>
-                    <li><i class="fas fa-camera"></i><p>사진</p></li>
-                    <li><i class="fas fa-clipboard-list"></i><p>게시판</p></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="header_menu"></div>
-        <div class="container">
-            <a class="gohome" href="../index.html" target="_blank">임시버튼_홈으로 가기</a>
+            <div class="swiper-pagination"></div>
+          </div> -->
         </div>
+            
+        
         <footer></footer>
-    </div> -->
-
-    <!-- 제이쿼리cdn -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- 외부 스크립트 시트 -->
-    <script src="js/script.js"></script>
+        <!-- 제이쿼리cdn -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- swpier script cdn -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- 외부 스크립트 시트 -->
+        <script src="js/script.js"></script>
+    
 
 </body>
 
