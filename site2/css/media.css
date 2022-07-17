@@ -4,17 +4,19 @@
 /* 모바일( ~ 400px 너비까지 적용) */
 @media screen and (max-width: 401px){
     
+    /* st 배경 텍스트 설정 */
+    .st {width: 50%;}
     /* container */
-    .container {width: 100%;}
+    /* .container {width: 100%;} */
 
     /* 헤더 */
-    header {}
+    /* header {} */
 
     /* contents */
-    .contents {}
+    /* .contents {} */
     
     /* footer */
-    footer {}
+    /* footer {} */
 
 }
 
