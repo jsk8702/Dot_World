@@ -5,8 +5,8 @@
     position: absolute;
     width: 200px;
     height: 100px;
-    top: 0%;
-    left: 50%;
+    bottom: 85%;
+    left: 5%;
     transform: translateX(-50%);
     font-size: 30px;
     color: black;
@@ -20,155 +20,13 @@
 .gohome p {font-weight: bold; font-size: 16px;}
 
 /* body 기본 설정 */
-body {min-height: 100vh; background-color: red;}
-
-/* container 전체 기본 설정 */
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-}
-.container-inner {width: 100%; height: 100%; position: relative;}
-
-
-/* container-title 배경 제목 설정 */
-.container-title {width: 100%; height: 100%;}
-.st {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 625px;
-  /* margin: 6rem auto 3rem auto; */
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 8rem;
-  font-family: 'ITC Benguiat W01';
-  font-weight: 800;
-  color: #1c0502;
-  text-shadow: 
-    -0.05rem -0.05rem 1px #ed2b12,
-    0.05rem -0.05rem 1px #ed2b12,
-    -0.05rem 0.05rem 1px #ed2b12,
-    0.05rem 0.05rem 1px #ed2b12,
-    0 0 15px #630100,
-    0 0 20px #450100;
-  letter-spacing: -2px;
-}
-.st p {display: inline-block; margin: 0;}
-.st-bound {
-  box-shadow: 
-    -0.05rem -0.05rem 2px #ed2b12,
-    0.05rem -0.05rem 2px #ed2b12,
-    -0.05rem 0.05rem 2px #ed2b12,
-    0.05rem 0.05rem 2px #ed2b12;
-  height: 5px;
-}
-.st-bound-full {
-  width: 100%;
-  margin: auto;
-  margin-bottom: -1.2rem;
-  max-width: 612px;
-  margin-left: 5px;
-}
-.st-bound-mini {margin-top: 0.5rem;}
-.st-bound-left {
-  float: left;
-  width: 99px;
-  position: relative;
-  left: 5px;
-}
-.st-bound-right {
-  float: right;
-  width: 103px;
-  left: 0.3rem;
-  position: relative;
-}
-.st-bottom {
-  clear: both;
-  top: -3.75rem;
-  position: relative;
-  left: .6rem;
-  letter-spacing: 2px;
-}
-.st-drop {
-  line-height: 0;
-  position: relative;
-  top: 1.55rem;
-}
-.st-stranger-s {font-size: 10.5rem; letter-spacing: -8px;}
-.st-stranger-t {letter-spacing: 0;}
-.st-stranger-n {letter-spacing: -5px;}
-.st-stranger-g {letter-spacing: 0;}
-.st-stranger-r-2 {font-size: 10.5rem; right: 0.2rem;}
-.st-things-t {font-size: 104%; letter-spacing: 2px;}
-.st-things-n {letter-spacing: -5px;}
-.st-things-g {letter-spacing: -3px;}
-
-
-
-
-
-
-
+body {min-height: 100vh; background-color: #000}
 
 /* container 설정 */
-/* .container {
+.container {
   width: 1600px;
   height: 100%;
-  background-color: yellowgreen;
   margin: 0 auto;
-} */
-
-/* 헤더 */
-header {
-  width: 100%;
-  height: 100px;
-  background-color: red;
-}
-
-/* 헤더 네이게이터 */
-header nav {width: 100%; height: 100%;}
-/* 네비게이터 공통 */
-header nav .nav-inner {
-  width: 100%; 
-  height: 100%; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.nav-inner li {
-  cursor: pointer; 
-  width: 200px; 
-  height: 100%; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  position: relative;
-}
-
-/* 헤더 네비게이터 세부 메뉴 */
-.gal-inner {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: auto;
-  padding: 15px 0;
-  background-color: gold;
-  z-index: 100;
-  display: none;
-  visibility: hidden;
-}
-.gal-inner li {margin-bottom: 10px;}
-.gal-inner li:nth-child(5) {margin-bottom: 0;}
-
-/* contents  설정*/
-.contents {
-  width: 100%;
-  height: calc(100vh - 150px);
-  position: relative;
-  background-color: blue;
 }
 
 /* swiper 슬라이드  설정*/
@@ -177,19 +35,26 @@ header nav .nav-inner {
   height: 100%;
   margin-left: auto; 
   margin-right: auto;
+  color: #fff;
 }
 .swiper.dot1 {
-  display: none;
-  visibility: hidden;
+  /* display: none;
+  visibility: hidden; */
 }
 
+.swiper-slide {background-color: red;}
 .swiper-slide h2 {
-  margin: 0;
+  width: calc(100% - 100px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   position: absolute;
   top: 5px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 30px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #555;
 }
 .swiper-slide a {
   display: flex;
@@ -197,26 +62,25 @@ header nav .nav-inner {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: blue;
-  padding: 50px 0;
+  /* background: #999; */
+  padding: 50px 50px;
   box-sizing: border-box;
+  
 }
 
-.swiper-slide a img {
-  display: block;
+.swiper-slide a .img_inside {
   width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  overflow: hidden;
+}
+
+.swiper-slide a .img_inside img {
+  display: block;
+  width: 100%;
   height: 100%;
 }
 
-
-
-
-
-
-
-/* footer */
-footer {
-   width: 100%;
-   height: 50px;
-   background-color: green;
-}
