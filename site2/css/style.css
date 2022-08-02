@@ -20,7 +20,14 @@
 .gohome p {font-weight: bold; font-size: 16px;}
 
 /* body 기본 설정 */
-body {min-height: 100vh; background-color: #000}
+body {
+  min-height: 100vh; 
+  /* background-color: #000 */
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 /* container 설정 */
 .container {
@@ -32,9 +39,9 @@ body {min-height: 100vh; background-color: #000}
 /* 헤더 설정 */
 header {width: 100%; height: 50px;}
 
-/* nav 설정 */
+/* nav 메뉴 설정 */
 nav {width: 100%; height: 100%; background-color: blue;}
-nav ul {
+nav .nav_menu {
   width: 100%;
   height: 100%;
   background-color: gray;
@@ -42,18 +49,54 @@ nav ul {
   justify-content: space-between;
   align-items: center;
 }
-nav ul li {
+nav .nav_menu > li {cursor: pointer;}
+nav .nav_menu > li {
   width: 20%; 
   height: 100%; 
   text-align: center; 
   line-height: 50px;
   position: relative;
 }
-nav ul li:nth-child(1) {background-color: #777;}
-nav ul li:nth-child(2) {background-color: #666;}
-nav ul li:nth-child(3) {background-color: #888;}
-nav ul li:nth-child(4) {background-color: #999;}
-nav ul li:nth-child(5) {background-color: #aaa;}
+nav ul > li:nth-child(1) {background-color: #777;}
+nav ul > li:nth-child(2) {background-color: #666;}
+nav ul > li:nth-child(3) {background-color: #888;}
+nav ul > li:nth-child(4) {background-color: #999;}
+nav ul > li:nth-child(5) {background-color: #aaa;}
+
+/* 서브메뉴 공통 설정 */
+.nav_menu_sub {
+  width: 100%;
+  height: 100%;
+  /* position은 굳이 위에 realative가 없어도 absolutue만 주면
+  해당 위치에서 가장 가까운 상위 위치에 자동으로 붙는다. */
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  z-index: 100;
+  /* display: none을 하면 안된다. 그러면 transition이 먹히지 않는다. */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.nav_menu_sub.active {
+  bottom: -50px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 갤러리 서브메뉴 */
+/* .nav_menu_gal_sub{} */
+
+/* 코딩 서브메뉴 */
+/* .nav_menu_cord_sub {} */
+
+
+/* 검색 서브메뉴 */
+/* .nav_menu_search_sub {} */
+
+/* 서브 메뉴 아코디언 설정 */
+
+
 
 /* 섹션 설정 */
 section {width: 100%; height: calc(100vh - 50px);}
@@ -66,10 +109,7 @@ section {width: 100%; height: calc(100vh - 50px);}
   margin-right: auto;
   color: #fff;
 }
-.swiper.dot1 {
-  /* display: none;
-  visibility: hidden; */
-}
+/* .swiper.dot1 {display: none;visibility: hidden;} */
 
 .swiper-slide {background-color: red;}
 .swiper-slide h2 {

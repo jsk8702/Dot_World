@@ -3,6 +3,15 @@
 // 제이쿼리 설정
 $(document).ready(function () {
 
+  // nav 서브 메뉴 설정
+  // $(".nav_menu_sub").hide(); 
+  //모든 서브 메뉴는 기본적으로 안보인다.
+  // nav 메뉴에 각 li를 클릭했을 때 변화
+  $(".nav_menu > li").click(function(){
+    $(this).find(".nav_menu_sub").addClass("active");
+  }).mouseleave(function(){
+    $(this).find(".nav_menu_sub").removeClass("active");
+  })
 
     
 });

@@ -21,33 +21,37 @@
 <!-- 코딩을 한줄로 이어서 나가고 싶으면 Beautify, css-compact 플러그 인 설치하고 알트+ 쉬프트 + f 눌러서 한줄변환 하고 저장하면 된다. -->
 <!-- <li><img src="https://i.pinimg.com/originals/54/5d/c7/545dc7fc35c5a7d6cfd306ff3bbccf90.gif"></li> -->
 <!-- 검색창 구현: https://www.youtube.com/watch?v=EEQ8Gi3Siyg&t=21s -->
+<!-- 서브메뉴 아코디언 구현: https://youtu.be/5wo7glve9Wc -->
+<!-- 아코디언은 서브 메뉴에 넣고 일반 메인 메뉴는 각 메뉴 눌렀을때 나오게[ 한다.] -->
+<!-- 서브메뉴: https://youtu.be/_rkDMhSxfAs?t=210 -->
 
 <body>
     <div class="container">
       <div class="gohome"><a href="..\index.html"><h1>홈으로!</h1><p>사이트 공사중!</p></a></div>
       <header>
         <nav>
-          <ul>
-            <li><p>사이트 소개</p></li>
-            <li>
+          <ul class="nav_menu">
+            <li class="nav_menu_intro"><p>사이트 소개</p></li>
+            <li class="nav_menu_gal">
               <p>갤러리</p>
-              <ul class="gal-inner">
-                <li>도트</li>
-                <li>사진</li>
-                <li>3D</li>
+              <ul class="nav_menu_sub">
+                <li><p>도트</p></li>
+                <li><p>일러스트</p></li>
+                <li><p>사진</p></li>
+                <li><p>3D</p></li>
               </ul>
             </li>
-            <li>
+            <li class="nav_menu_cord">
               <p>코딩</p>
-              <ul class="coding-inner">
-                <li>CSS</li>
-                <li>JS</li>
+              <ul class="nav_menu_sub">
+                <li><p>CSS</p></li>
+                <li><p>JS</p></li>
               </ul>
             </li>
-            <li><p>포트폴리오</p></li>
-            <li>
+            <li class="nav_menu_port"><p>포트폴리오</p></li>
+            <li class="nav_menu_search">
               <p>검색</p>
-              <input class="search-inner" type="search">
+              <input class="nav_menu_sub" type="search">
             </li>
           </ul>
         </nav>
@@ -188,6 +192,9 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- swpier script cdn -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ionicon cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- 외부 스크립트 시트 -->
     <script src="js/script.js"></script>
 </body>
