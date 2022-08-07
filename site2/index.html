@@ -21,9 +21,7 @@
 <!-- 코딩을 한줄로 이어서 나가고 싶으면 Beautify, css-compact 플러그 인 설치하고 알트+ 쉬프트 + f 눌러서 한줄변환 하고 저장하면 된다. -->
 <!-- <li><img src="https://i.pinimg.com/originals/54/5d/c7/545dc7fc35c5a7d6cfd306ff3bbccf90.gif"></li> -->
 <!-- 검색창 구현: https://www.youtube.com/watch?v=EEQ8Gi3Siyg&t=21s -->
-<!-- 서브메뉴 아코디언 구현: https://youtu.be/5wo7glve9Wc -->
-<!-- 아코디언은 서브 메뉴에 넣고 일반 메인 메뉴는 각 메뉴 눌렀을때 나오게[ 한다.] -->
-<!-- 서브메뉴: https://youtu.be/_rkDMhSxfAs?t=210 -->
+
 
 <body>
     <div class="container">
@@ -31,156 +29,1122 @@
       <header>
         <nav>
           <ul class="nav_menu">
-            <li class="nav_menu_intro"><p>사이트 소개</p></li>
+            <li class="nav_menu_intro"><a href="#tab1">사이트 소개</a></li>
             <li class="nav_menu_gal">
-              <p>갤러리</p>
+              <a>갤러리</a>
               <ul class="nav_menu_sub">
-                <li><p>도트</p></li>
-                <li><p>일러스트</p></li>
-                <li><p>사진</p></li>
-                <li><p>3D</p></li>
+                <li class="nav_menu_sub_dot">
+                  <a>도트</a>
+                  <ul class="nav_menu_sub_submenu">
+                    <li><a href="#tab2">SF</a></li>
+                    <li><a href="#tab3">판타지</a></li>
+                    <li><a href="#tab4">자연</a></li>
+                    <li><a href="#tab5">일상</a></li>
+                  </ul>
+                </li>
+                <li><a href="#tab6">일러스트</a></li>
+                <li><a href="#tab7">사진</a></li>
+                <li><a href="#tab8">3D</a></li>
+                <li><a href="#tab9">애니메이션</a></li>
               </ul>
             </li>
             <li class="nav_menu_cord">
-              <p>코딩</p>
+              <a>코딩 연습</a>
               <ul class="nav_menu_sub">
-                <li><p>CSS</p></li>
-                <li><p>JS</p></li>
+                <li><a href="#tab10">CSS</a></li>
+                <li><a href="#tab11">JS</a></li>
               </ul>
             </li>
-            <li class="nav_menu_port"><p>포트폴리오</p></li>
+            <li class="nav_menu_port"><a href="#tab12">포트폴리오</a></li>
             <li class="nav_menu_search">
-              <p>검색</p>
-              <input class="nav_menu_sub" type="search">
+              <a href="#tab13">검색</a>
+              <form id="search_form" class="nav_menu_sub">
+                <input type="text" id="search">
+                <button id="searchBtn">search</button>
+              </form>
+              
             </li>
           </ul>
         </nav>
       </header>
       <section>
-        <div class="swiper mySwiper dot1">
-          <div class="swiper-wrapper">
-            <!-- 슬라이드 되는 이미지 모음 -->
-            <div class="swiper-slide">
-              <h2>Refuge GIF, Kenze Wee / Seppuku_Doge</h2>
-              <a href="https://www.pinterest.co.kr/pin/621426448600058409/">
-                <div class="img_inside">
-                  <img src="https://i.pinimg.com/originals/db/29/d8/db29d825222ac2a3f7119a575962729e.gif">
+        <div id="list" class="section_inner">
+            <article id="tab1" class="tab"><h1>공사중</h1></article>
+
+            <!-- SF 도트 갤러리 -->
+            <article id="tab2" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>Waiting 2.0 by pixeljeff on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/471259548518335584/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/8c/f6/06/8cf60608f95bfae20a9e78884e1a33cb.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Japanese Store Pixelart, Fernando Henrique</h2>
+                    <a href="https://www.pinterest.co.kr/pin/369787819415076553/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7d/78/f9/7d78f999a049bea0875d2e84e549bc77.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Shelter by minimoss on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>Japanese Store Pixelart, Fernando Henrique</h2>
-              <a href="https://www.pinterest.co.kr/pin/369787819415076553/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/7d/78/f9/7d78f999a049bea0875d2e84e549bc77.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 판타지 도트 갤러리 -->
+            <article id="tab3" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>1. </em>16-Bit的風景圖(下收</h2></div> 
+                    <a href="https://www.pinterest.co.kr/pin/700943129518842511/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/f9/8a/29/f98a2993b14dd5a55a6eb17f34ba6c3b.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>2. </em>Sunset Waterfall by HealTheIll on DeviantArt</h2></div> 
+                    <a href="https://www.pinterest.co.kr/pin/43628690131129109/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/02/e0/75/02e075adf1755919e5c103312c02fa6d.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>3. </em>tinycartridge</h2></div> 
+                    <a href="https://www.pinterest.co.kr/pin/542543086371830412/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7f/06/9b/7f069bf9704f0f3ad98f25f490996a1f.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>4. </em>j</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/363595369894024797/">
+                      <div class="WANEELLA pixel art">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/14/d5/64/14d564abeefa93c3ec7bc6afa013abaf.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>5. </em>noticed//vikturi au</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/3588874691090518/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/3e/cd/40/3ecd40cf4224801480a2bac92c0a685b.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>Shelter by minimoss on DeviantArt</h2>
-              <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 자연 도트 갤러리 -->
+            <article id="tab4" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>Refuge GIF, Kenze Wee / Seppuku_Doge</h2>
+                    <a href="https://www.pinterest.co.kr/pin/621426448600058409/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/db/29/d8/db29d825222ac2a3f7119a575962729e.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Japanese Store Pixelart, Fernando Henrique</h2>
+                    <a href="https://www.pinterest.co.kr/pin/369787819415076553/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7d/78/f9/7d78f999a049bea0875d2e84e549bc77.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Shelter by minimoss on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>j</h2>
-              <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 일상 도트 갤러리 -->
+            <article id="tab5" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>1. </em>픽셀 이미지... - 스퀘어 카테고리</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/453526624983321005/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/43/8b/fb/438bfb436a3b68faa4f1e00d98522bc1.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>2. </em>Train by minimoss on DeviantArt</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/51861833199120084/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/59/29/7e/59297e294dd62f3103ddc9fd4ba09cb2.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>3. </em>river | 1041uuu on Patreon</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/542543086371765651/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/34/d7/a3/34d7a3bbe7ab056f213e66c7182dd57e.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>4. </em>wattpad.com</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/405112928992415217/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/d8/87/4f/d8874fd4c49471e36d39230d644adf5d.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>5. </em>PIXEL ART BY @SOFTWARING</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>6. </em>river | 1041uuu on Patreon</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>7. </em>8비트로 만나는 일본의 일상</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>8. </em>3:50 Photographic Print by waneella</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>9. </em>a motel by radshoe on DeviantArt</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>10. </em>WANEELLA pixel art</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>11. </em>Sahi hai.</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>12. </em>Rogue_Telemetry</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title"><h2><em>13. </em>AnasAbdin: Photo</h2></div>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>PIXEL ART BY @SOFTWARING</h2>
-              <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 일러스트 갤러리 -->
+            <article id="tab6" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>Drxgonfly</h2>
+                    <a href="https://www.pinterest.co.kr/pin/588282770090072197/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/03/04/a0/0304a004f0860cc57a1f0d387213da32.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Eye Contact // Dreamnap - Part Ten.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/785033778809987578/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/1c/4a/03/1c4a03fce0ad36e2ef384f4c9433ec41.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Shelter by minimoss on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>river | 1041uuu on Patreon</h2>
-              <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 사진 갤러리 -->
+            <article id="tab7" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>A First Timer's Guide To New York City - Dame Traveler</h2>
+                    <a href="https://www.pinterest.co.kr/pin/611785930643077901/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/564x/38/81/63/388163c831d487d7d46c51fbca99f4e0.jpg">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Speechless- B*BARNES</h2>
+                    <a href="https://www.pinterest.co.kr/pin/244320348524992069/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/07/3e/fc/073efc523b520f81ff6a5aa51e908889.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Shelter by minimoss on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>8비트로 만나는 일본의 일상</h2>
-              <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 3D 갤러리 -->
+            <article id="tab8" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>Void Design</h2>
+                    <a href="https://www.pinterest.co.kr/pin/847943436104305687/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/0d/c6/f2/0dc6f2c2a0f175b5a37f55e7156628f4.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Japanese Store Pixelart, Fernando Henrique</h2>
+                    <a href="https://www.pinterest.co.kr/pin/369787819415076553/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7d/78/f9/7d78f999a049bea0875d2e84e549bc77.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Shelter by minimoss on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/77898268547881908/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9a/24/1d/9a241df1ea364421e7bbca9c854e1e0a.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>3:50 Photographic Print by waneella</h2>
-              <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 애니메이션 갤러리 -->
+            <article id="tab9" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>𝐓𝐇𝐀𝐍𝐊𝐒 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 ¡! - 𝖫𝗈𝗎𝗂𝗌 𝖯𝖺𝗍𝗋𝗂𝖽𝗀𝖾</h2>
+                    <a href="https://www.pinterest.co.kr/pin/292804413281490687/">
+                      <div class="img_inside">
+                        <img src="https://i.pinimg.com/originals/23/a3/21/23a321381c9ceae21bc5048b9a7eabc5.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>지현</h2>
+                    <a href="https://www.pinterest.co.kr/pin/586523551487515631/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c5/0e/2d/c50e2d3bb4203f41d5959b9a88c1a997.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>wattpad.com</h2>
+                    <a href="https://www.pinterest.co.kr/pin/839147343086801532/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/17/b1/0b/17b10bd0cf07bc11cedba5785e6d02e7.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>j</h2>
+                    <a href="https://www.pinterest.co.kr/pin/529313762465992158/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/13/30/d4/1330d43cea8015f6082400cc1e3972ad.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>PIXEL ART BY @SOFTWARING</h2>
+                    <a href="https://www.pinterest.co.kr/pin/482448178848781916/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/9b/07/60/9b0760b0478fe0996b430b05565a6252.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>river | 1041uuu on Patreon</h2>
+                    <a href="https://www.pinterest.co.kr/pin/119345458868162522/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/42/e1/b842e1b5936db512fdddac0583c30350.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>8비트로 만나는 일본의 일상</h2>
+                    <a href="https://www.pinterest.co.kr/pin/704180091710612846/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>3:50 Photographic Print by waneella</h2>
+                    <a href="https://www.pinterest.co.kr/pin/353251164512735248/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/20/2d/a0/202da09c9655941d4268d8a756f405fa.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>a motel by radshoe on DeviantArt</h2>
+                    <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>WANEELLA pixel art</h2>
+                    <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Sahi hai.</h2>
+                    <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>Rogue_Telemetry</h2>
+                    <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <h2>AnasAbdin: Photo</h2>
+                    <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
+                      <div class="img_inside">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
+                      </div>
+                    </a>
+                  </div>
+        
+        
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>a motel by radshoe on DeviantArt</h2>
-              <a href="https://www.pinterest.co.kr/pin/93801604730940684/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/c1/26/09/c126093cdf3e70e5257b11e697c3c767.gif">
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- CSS 갤러리 -->
+            <article id="tab10" class="tab"><h1>공사중</h1></article>
+
+            <!-- JS 갤러리 -->
+            <article id="tab11" class="tab"><h1>공사중</h1></article>
+
+            <!-- 포트폴리오 갤러리 -->
+            <article id="tab12" class="tab">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 되는 이미지 모음 -->
+                  <div class="swiper-slide">
+                    <h2>공사중</h2>
+                    <a href="#none">
+                      <div class="img_inside">
+                        
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h2>공사중</h2>
+                    <a href="#none">
+                      <div class="img_inside">
+                        
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h2>공사중</h2>
+                    <a href="#none">
+                      <div class="img_inside">
+                        
+                      </div>
+                    </a>
+                  </div>
+    
                 </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>WANEELLA pixel art</h2>
-              <a href="https://www.pinterest.co.kr/pin/91268329941915637/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/7c/b3/f4/7cb3f41190174805e765d17abfa4a449.gif">
-                </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>Sahi hai.</h2>
-              <a href="https://www.pinterest.co.kr/pin/38210296826937413/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/f4/b3/69/f4b3691719dcab896f5be5c3c01730ec.gif">
-                </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>Rogue_Telemetry</h2>
-              <a href="https://www.pinterest.co.kr/pin/806777720761299308/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/26/0f/8d/260f8d426311d691436dff9a2f727010.gif">
-                </div>
-              </a>
-            </div>
-  
-            <div class="swiper-slide">
-              <h2>AnasAbdin: Photo</h2>
-              <a href="https://www.pinterest.co.kr/pin/387168899228727729/">
-                <div class="img_inside">
-                  <img class="lazy" data-src="https://i.pinimg.com/originals/f5/f4/e8/f5f4e8e6971bb04ff3b4e30302294d91.gif">
-                </div>
-              </a>
-            </div>
-  
-  
-          </div>
-          <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <!-- 검색창 갤러리 -->
+            <article id="tab13" class="tab"><h1>공사중</h1></article>
+            
+          
+          
         </div>
+        
       </section>
       <!-- 이미지 슬라이드 -->
       

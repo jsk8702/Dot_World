@@ -3,18 +3,39 @@
 // 제이쿼리 설정
 $(document).ready(function () {
 
-  // nav 서브 메뉴 설정
-  // $(".nav_menu_sub").hide(); 
-  //모든 서브 메뉴는 기본적으로 안보인다.
-  // nav 메뉴에 각 li를 클릭했을 때 변화
+  // nav 메뉴 설정
+  // nav 메뉴를 클릭했을 때 해당 리스트가 나타난다.
   $(".nav_menu > li").click(function(){
     $(this).find(".nav_menu_sub").addClass("active");
+  // 해당 메뉴에서 마우스를 빼면 메뉴가 사라진다.
   }).mouseleave(function(){
     $(this).find(".nav_menu_sub").removeClass("active");
-  })
+  });
+
+  // nav 서브 메뉴 설정
+  // 메인 메뉴 누르면 서브메뉴가 존재할 경우 열린다. 
+  $(".nav_menu_sub_dot").click(function(){
+    $(this).find(".nav_menu_sub_submenu").stop().slideToggle();
+  });
+  // 해당 메뉴 영역을 나가면 서브메뉴가 닫힌다.
+  $(".nav_menu_sub").mouseleave(function(){
+    $(this).find(".nav_menu_sub_submenu").stop().slideUp();
+  });
 
     
 });
+
+
+
+// 검색창 구현 : https://goddino.tistory.com/97
+
+
+
+
+
+
+
+
 
 // swpier 기본 설정
 var swiper = new Swiper(".mySwiper", {

@@ -22,11 +22,9 @@
 /* body 기본 설정 */
 body {
   min-height: 100vh; 
-  /* background-color: #000 */
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* container 설정 */
@@ -49,13 +47,18 @@ nav .nav_menu {
   justify-content: space-between;
   align-items: center;
 }
-nav .nav_menu > li {cursor: pointer;}
 nav .nav_menu > li {
   width: 20%; 
   height: 100%; 
   text-align: center; 
   line-height: 50px;
   position: relative;
+  cursor: pointer;
+}
+nav .nav_menu > li a{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 nav ul > li:nth-child(1) {background-color: #777;}
 nav ul > li:nth-child(2) {background-color: #666;}
@@ -84,22 +87,50 @@ nav ul > li:nth-child(5) {background-color: #aaa;}
   visibility: visible;
 }
 
-/* 갤러리 서브메뉴 */
-/* .nav_menu_gal_sub{} */
-
-/* 코딩 서브메뉴 */
-/* .nav_menu_cord_sub {} */
-
-
-/* 검색 서브메뉴 */
-/* .nav_menu_search_sub {} */
-
 /* 서브 메뉴 아코디언 설정 */
+.nav_menu_sub_submenu {display: none;}
 
+/* 검색창 설정 */
+/* #search_form {} */
+#search_form input, #search_form button {padding: 5px 10px;}
 
+/* *************************************header end**************************************** */
 
 /* 섹션 설정 */
 section {width: 100%; height: calc(100vh - 50px);}
+.section_inner {
+  width: 100%; 
+  height: 100%;
+  /* background img site: https://www.kogl.or.kr/recommend/recommendDivView.do?recommendIdx=36771&division=img */
+  position: relative;
+  background-image: url("http://www.kogl.or.kr/upload_recommend/%ED%82%A4%EC%9B%8C%EB%93%9C%20%EC%A0%80%EC%9E%91%EB%AC%BC/%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C/%EB%AC%B4%EC%8A%A8%20%EC%82%AC%EC%A7%84%EC%9D%BC%EA%B9%8C/%EA%B3%B5%EB%AA%A8%EC%A0%84_0191_%EB%8C%80%EC%A0%84%20%EC%95%BC%EA%B2%BD.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* article 설정 */
+.section_inner .tab {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.section_inner .tab h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #Fff;
+  font-size: 50px;
+}
+.section_inner .tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* swiper 슬라이드  설정*/
 .swiper {
@@ -109,21 +140,37 @@ section {width: 100%; height: calc(100vh - 50px);}
   margin-right: auto;
   color: #fff;
 }
-/* .swiper.dot1 {display: none;visibility: hidden;} */
 
-.swiper-slide {background-color: red;}
-.swiper-slide h2 {
+/* 슬라이드 제목 설정 */
+.swiper .swiper-slide-title {
   width: calc(100% - 100px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  height: 40px;
   position: absolute;
   top: 5px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 28px;
   text-align: center;
-  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-slide-title > h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-slide-title h2 em {
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 .swiper-slide a {
   display: flex;
