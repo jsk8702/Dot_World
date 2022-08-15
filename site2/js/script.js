@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   // nav 메뉴 설정
   // nav 메뉴를 클릭했을 때 해당 리스트가 나타난다.
-  $(".nav_menu > li").click(function(){
+  $(".nav_main_menu > li").click(function(){
     $(this).find(".nav_menu_sub").addClass("active");
   // 해당 메뉴에서 마우스를 빼면 메뉴가 사라진다.
   }).mouseleave(function(){
@@ -14,12 +14,12 @@ $(document).ready(function () {
 
   // nav 서브 메뉴 설정
   // 메인 메뉴 누르면 서브메뉴가 존재할 경우 열린다. 
-  $(".nav_menu_sub_dot").click(function(){
-    $(this).find(".nav_menu_sub_submenu").stop().slideToggle();
+  $(".nav_menu_sub_main").click(function(){
+    $(this).find(".nav_menu_sub_main_sub").stop().slideToggle();
   });
   // 해당 메뉴 영역을 나가면 서브메뉴가 닫힌다.
-  $(".nav_menu_sub").mouseleave(function(){
-    $(this).find(".nav_menu_sub_submenu").stop().slideUp();
+  $(".nav_main_menu").mouseleave(function(){
+    $(this).find(".nav_main_menu").stop().slideUp();
   });
 
     
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
 
-// 검색창 구현 : https://goddino.tistory.com/97
+
 
 
 

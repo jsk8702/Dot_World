@@ -39,8 +39,23 @@ body {
 header {width: 100%; height: 50px;}
 
 /* nav 메뉴 설정 */
-nav {width: 100%; height: 100%;}
-nav .nav_menu {
+nav {width: 100%; height: 100%; position: relative;}
+
+/* 모바일 nav 햄버거 메뉴 */
+.m_nav_main_menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+}
+/* 모바일 nav 타이틀 화면 */
+.m_nav_title { display: none;}
+
+nav .nav_main_menu {
   width: 100%;
   height: 100%;
   background-color: gray;
@@ -48,7 +63,7 @@ nav .nav_menu {
   justify-content: space-between;
   align-items: center;
 }
-nav .nav_menu > li {
+nav .nav_main_menu > li {
   width: 20%; 
   height: 100%; 
   text-align: center; 
@@ -56,7 +71,7 @@ nav .nav_menu > li {
   position: relative;
   cursor: pointer;
 }
-nav .nav_menu > li a{
+nav .nav_main_menu > li a{
   display: block;
   width: 100%;
   height: 100%;
@@ -67,7 +82,7 @@ nav ul > li:nth-child(3) {background-color: #888;}
 nav ul > li:nth-child(4) {background-color: #999;}
 nav ul > li:nth-child(5) {background-color: #aaa;}
 
-/* 서브메뉴 공통 설정 */
+/* 갤러리 서브메뉴 공통 설정 */
 .nav_menu_sub {
   width: 100%;
   height: 100%;
@@ -89,7 +104,7 @@ nav ul > li:nth-child(5) {background-color: #aaa;}
 }
 
 /* 서브 메뉴 아코디언 설정 */
-.nav_menu_sub_submenu {display: none;}
+.nav_menu_sub_main_sub {display: none;}
 
 /* 검색창 설정 */
 /* #search_form {} */
