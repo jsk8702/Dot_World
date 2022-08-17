@@ -2,44 +2,89 @@
 
 /* 대문으로 가는 임시 설정 */
 .gohome {
-    position: fixed;
-    width: 200px;
-    height: 100px;
-    top: 50%;
-    left: 10%;
-    color: black;
-    background-color: #aaa;
-    z-index: 1000;
-    text-align: center;
-    line-height: 50px;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa;
+  text-align: center;
 }
-.gohome h1 {font-weight: normal; font-size: 18px;}
-.gohome p {font-weight: bold; font-size: 16px;}
+.gohome h1 {
+  font-weight: normal; 
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.gohome p {font-weight: bold; font-size: 10px;}
 
 /* body 기본 설정 */
 body {
   min-height: 100vh; 
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("https://i.pinimg.com/originals/e6/2d/7a/e62d7a4102980dc13a37182a7eb71587.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* 배경 이미지 주소: https://www.pinterest.co.kr/pin/311029918030907991/ */
 }
 
 /* container 설정 */
-.container {
-  width: 1600px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
+.container {width: 100%; height: 100%;}
 
 /* 헤더 설정 */
 header {width: 100%; height: 50px;}
+header .header_inner {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  
+}
 
-/* nav 메뉴 설정 */
-nav {width: 100%; height: 100%; position: relative;}
+/* 헤더 타이틀 설정 */
+.header_inner_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  opacity: 0.4;
+}
+header .header_inner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: 'Gugi', cursive;
+  text-shadow: 5px 5px #558ABB;
+}
+header .header_inner h1 {padding: 10px 15px;}
+
+/* nav 햄버거 메뉴 설정 */
+nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+nav .nav_inner {width: 100%; height: 100%; background-color: blue;}
+.nav_inner .nav_inner_hamBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+/* section 설정 */
+section {display: none;}
+
+
 
 /* 모바일 nav 햄버거 메뉴 */
 .m_nav_main_menu {
