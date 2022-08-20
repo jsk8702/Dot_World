@@ -32,7 +32,11 @@ body {
 }
 
 /* container 설정 */
-.container {width: 100%; height: 100%;}
+.container {
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
+}
 
 /* 헤더 설정 */
 header {width: 100%; height: 50px;}
@@ -50,8 +54,7 @@ header .header_inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #eee;
-  opacity: 0.4;
+  background-color: rgba(255,255,255,0.4);
 }
 header .header_inner h1 {
   position: absolute;
@@ -64,13 +67,13 @@ header .header_inner h1 {
 }
 header .header_inner h1 {padding: 10px 15px;}
 
-/* nav 햄버거 메뉴 설정 */
+/* nav 햄버거 버튼 설정 */
 nav {
   position: relative;
   width: 100%;
   height: 100%;
 }
-nav .nav_inner {width: 100%; height: 100%; background-color: blue;}
+nav .nav_inner {width: 100%; height: 100%;}
 .nav_inner .nav_inner_hamBtn {
   position: absolute;
   top: 50%;
@@ -78,8 +81,60 @@ nav .nav_inner {width: 100%; height: 100%; background-color: blue;}
   left: 2%;
   width: 40px;
   height: 40px;
-  background-color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.nav_inner .nav_inner_hamBtn i {font-size: 40px; color: #000;}
+
+/* 햄버거 메뉴 설정 */
+.nav_inner .nav_inner_menu {
+  position: absolute;
+  top: 0;
+  left: -66%;
+  width: 66%;
+  height: auto;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.nav_inner .nav_inner_menu.active {left: 0;}
+.nav_inner .nav_inner_menu ul {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.nav_inner .nav_inner_menu ul li {
+  width: 100%; 
+  height: 100%;
+  border-top: 2px solid rgba(0,0,0,0.4);
+}
+.nav_inner .nav_inner_menu ul li:nth-child(1) {border-top: none;}
+.nav_inner .nav_inner_menu ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Gugi', cursive;
+  padding: 10px 0px;
+}
+
+/* 햄버거 메뉴 닫기 버튼 */
+.nav_inner_menu_close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_inner_menu_close i {font-size: 40px; color: #000;}
+
 
 /* section 설정 */
 section {display: none;}
@@ -121,11 +176,7 @@ nav .nav_main_menu > li a{
   width: 100%;
   height: 100%;
 }
-nav ul > li:nth-child(1) {background-color: #777;}
-nav ul > li:nth-child(2) {background-color: #666;}
-nav ul > li:nth-child(3) {background-color: #888;}
-nav ul > li:nth-child(4) {background-color: #999;}
-nav ul > li:nth-child(5) {background-color: #aaa;}
+
 
 /* 갤러리 서브메뉴 공통 설정 */
 .nav_menu_sub {
