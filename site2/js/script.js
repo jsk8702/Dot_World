@@ -15,13 +15,13 @@ $(document).ready(function () {
 
   // nav 서브 메뉴 설정
   // 메인 메뉴 누르면 서브메뉴가 존재할 경우 열린다. 
-  // $(".nav_menu_sub_main").click(function(){
-  //   $(this).find(".nav_menu_sub_main_sub").stop().slideToggle();
-  // });
+  $(".nav_inner_sub_main").click(function(){
+    $(this).find(".nav_inner_sub_menu").stop().slideToggle();
+  });
   // 해당 메뉴 영역을 나가면 서브메뉴가 닫힌다.
-  // $(".nav_main_menu").mouseleave(function(){
-  //   $(this).find(".nav_main_menu").stop().slideUp();
-  // });
+  $(".nav_inner_sub_main").mouseleave(function(){
+    $(this).find(".nav_inner_sub_menu").stop().slideUp();
+  });
 
     
 });

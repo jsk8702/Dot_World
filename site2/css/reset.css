@@ -3,8 +3,10 @@
 /* 구글 웹폰트 */
 /* 전체 배경 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/* 사이트 제목 */
+/* 사이트 제목 및 메인 */
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+/* 사이트 서브 제목 */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
 
 /* 초기화 설정 */
 html,body,div,a,ol,ul,li,h1,h2,h3,h4,h5,h6,header,section,footer,aside,article,i,p { margin: 0; padding: 0; } 
