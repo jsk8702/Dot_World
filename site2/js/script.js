@@ -19,9 +19,14 @@ $(document).ready(function () {
     $(this).find(".nav_inner_sub_menu").stop().slideToggle();
   });
   // 해당 메뉴 영역을 나가면 서브메뉴가 닫힌다.
-  $(".nav_inner_sub_main").mouseleave(function(){
-    $(this).find(".nav_inner_sub_menu").stop().slideUp();
-  });
+  // $(".nav_inner_sub_main").mouseleave(function(){
+  //   $(this).find(".nav_inner_sub_menu").stop().slideUp();
+  // });
+
+  // 서브 메뉴를 클릭하면 햄버거 메뉴 전체가 사라진다.
+  $(".nav_inner_sub_menu").click(function(){
+    $(".nav_inner_menu").removeClass("active");
+    });
 
     
 });

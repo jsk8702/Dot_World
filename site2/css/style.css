@@ -65,7 +65,7 @@ nav .nav_inner {width: 100%; height: 100%;}
   justify-content: center;
   align-items: center;
 }
-.nav_inner .nav_inner_hamBtn i {font-size: 40px; color: #000;}
+.nav_inner .nav_inner_hamBtn i {font-size: 40px; color: #FFF;}
 
 /* 햄버거 메뉴 설정 */
 .nav_inner .nav_inner_menu {
@@ -139,20 +139,15 @@ nav .nav_inner {width: 100%; height: 100%;}
 
 /* section 설정 */
 section {
-  /* width: 100%; 
-  height: 84%; 
-  padding: 2% 2%;
-  box-sizing: border-box; */
-  margin-top: 8px;
-  margin-bottom: -6px;
+  box-sizing: border-box;
   width: 100%; 
-  height: 87%; 
+  height: 92%; 
   display: flex;
   justify-content: center;
   align-items:flex-end;
 }
 .section_inner {
-  width: 96%; 
+  width: 100%; 
   height: 100%; 
   position: relative;
   overflow: hidden;
@@ -166,7 +161,6 @@ section {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
-  /* background-color: rgba(0,0,0,0.8); */
 }
 .section_inner .tab h1 {
   display: flex;
@@ -188,21 +182,28 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-left: auto; 
-  margin-right: auto;
-  color: pink;
-  text-shadow: 1px 1px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
+  background-color: rgba(255,255,255,0.4);
+}
+.swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: calc(100% - 40px);
 }
 
 /* 슬라이드 제목 설정 */
 .swiper .swiper-slide-title {
-  width: calc(100% - 100px);
+  width: 100%;
   height: 40px;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  
+  box-sizing: border-box;
+  padding: 0px 3%;
+  border-bottom: 2px solid #fff;
 }
 .swiper .swiper-slide-title > h2 {
   overflow: hidden;
@@ -210,50 +211,60 @@ section {
   white-space: nowrap;
   width: 100%;
   height: 100%;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.swiper .swiper-slide-title h2 em {
+.swiper .swiper-slide-title > h2 > em {
   font-style: normal;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 4px;
 }
-.swiper-slide a {
+
+.swiper-slide .img_inside {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: calc(100% - 40px);
+  background-color: rgba(0,0,0,0.6);
+}
+
+.swiper-slide .img_inside a {
+  width: 100%;
   height: 100%;
-  padding: 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
 
-.swiper-slide a .img_inside {
-  width: auto;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-  overflow: hidden;
-}
-
-.swiper-slide a .img_inside img {
+.swiper-slide .img_inside a img {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit:contain;
 }
 
 /* 슬라이드 하단 번호 표시 */
-.swiper-pagination {position: absolute; bottom: 0;}
+.swiper-pagination {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 2px solid #fff;
+}
 
 
 /* footer 설정 */
-footer {
+/* footer {
   width: 100%; 
   height: 5%; 
   display: flex;
@@ -265,7 +276,7 @@ footer h2 {
   font-weight: normal;
   color: rgba(255,255,255,0.4);
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
+} */
 
 
 
