@@ -226,10 +226,10 @@ header .header_menu li:nth-child(2) {width: 75%; height: 100%;}
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: #eee;
-  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
 }
 
 /* 헤더 메뉴의 nav 설정 */
