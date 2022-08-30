@@ -3,6 +3,7 @@
 /* body 기본 설정 */
 body {
   width: 100%;
+  /* min-height: 100vh;  */
   min-height: 100%; 
   background-image: url("https://i.pinimg.com/originals/e6/2d/7a/e62d7a4102980dc13a37182a7eb71587.gif");
   background-repeat: no-repeat;
