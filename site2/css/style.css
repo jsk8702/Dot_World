@@ -239,9 +239,14 @@ section {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.swiper-slide .img_inside a img {width: 100%; height: auto;}
+.swiper-slide .img_inside a img {
+  width: 100%;
+  height: auto;
+  object-fit:fill;
+}
 
 /* 슬라이드 하단 번호 표시 */
 .swiper-pagination {
