@@ -28,6 +28,19 @@ $(document).ready(function () {
     $(".nav_inner_menu").removeClass("active");
     });
 
+
+
+
+  // 뮤직박스 메뉴 설정
+  // nav 메뉴를 클릭했을 때 해당 리스트가 나타난다.
+  $(".nav_inner .nav_inner_musicBtn").click(function(){
+    $(this).next(".nav_inner_musicMenu").addClass("active");
+  });
+  // 해당 메뉴에서 마우스를 빼면 메뉴가 사라진다.
+  $(".nav_inner_musicMenu_close").click(function(){
+    $(".nav_inner_musicMenu").removeClass("active");
+  });  
+
     
 });
 

@@ -2,9 +2,8 @@
 
 /* body 기본 설정 */
 body {
-  width: 100%;
-  /* min-height: 100vh;  */
-  min-height: 100%; 
+  width: 100vw;
+  min-height: 100vh; 
   background-image: url("https://i.pinimg.com/originals/e6/2d/7a/e62d7a4102980dc13a37182a7eb71587.gif");
   background-repeat: no-repeat;
   background-position: center;
@@ -16,6 +15,7 @@ body {
 .container {
   width: 100%; 
   height: 100%;
+  overflow: hidden;
 }
 
 /* 헤더 설정 */
@@ -46,13 +46,16 @@ header .header_inner h1 {
 }
 header .header_inner h1 {padding: 10px 15px;}
 
-/* nav 햄버거 버튼 설정 */
+/* header 네비게이터 전체 설정 */
 nav {
   position: relative;
   width: 100%;
   height: 100%;
 }
-nav .nav_inner {width: 100%; height: 100%;}
+nav .nav_inner {width: 100%; height: 100%; overflow: hidden;}
+
+
+/* nav 햄버거 버튼 설정 */
 .nav_inner .nav_inner_hamBtn {
   position: absolute;
   top: 50%;
@@ -100,7 +103,6 @@ nav .nav_inner {width: 100%; height: 100%;}
   font-family: 'Gugi', cursive;
   padding: 10px 0px;
 }
-
 /* 햄버거 메뉴 닫기 버튼 */
 .nav_inner_menu_close {
   position: absolute;
@@ -114,6 +116,52 @@ nav .nav_inner {width: 100%; height: 100%;}
   align-items: center;
 }
 .nav_inner_menu_close i {font-size: 40px; color: #000;}
+
+
+/* 뮤직박스 아이콘 */
+.nav_inner .nav_inner_musicBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_inner .nav_inner_musicBtn i {font-size: 40px; color: #FFF;}
+
+/* 뮤직박스 전체 설정 */
+.nav_inner .nav_inner_musicMenu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.nav_inner .nav_inner_musicMenu.active {left: 0;}
+
+/* 뮤직박스 닫기 버튼 */
+.nav_inner_musicMenu_close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_inner_musicMenu_close i {font-size: 40px; color: #000;}
+
+
+
 
 /* 서브 메뉴 설정 */
 .nav_inner_sub_menu {display: none;}
