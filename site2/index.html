@@ -112,6 +112,33 @@
                 <!-- 음악 메뉴 닫기 버튼 -->
                 <div class="nav_inner_musicMenu_close"><i class="fas fa-times"></i></div>
                 <!-- 음악 메뉴 리스트 -->
+                <div class="volume">
+                  <p id="volume_show">90</p>
+                  <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
+                  <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                </div>
+
+                <div class="show_song_no">
+                    <p id="present">1</p>
+                    <p>/</p>
+                    <p id="total">5</p>
+                </div>
+                <!-- song title -->
+                <p id="title">titlt.mp3</p>
+                <p id="artist">Artist name</p>
+                <!-- 오른쪽 중간 구역 -->
+                <div class="middle">
+                    <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                    <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                </div>
+                <!-- 음악 플레이 위치표현 구역 -->
+                <div class="duration">
+                    <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+                </div>
+                <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+                  
+                
 
               </div>
             </div>

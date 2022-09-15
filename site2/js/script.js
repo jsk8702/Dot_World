@@ -46,12 +46,202 @@ $(document).ready(function () {
 
 
 
+// 뮤직박스 스크립트
+
+
+// 변수 설정
+let previous = document.querySelector('#pre');
+let play = document.querySelector('#play');
+let next = document.querySelector('#next');
+let title = document.querySelector('#title');
+let recent_volume = document.querySelector('#volume');
+let volume_show = document.querySelector('#volume_show');
+let slider = document.querySelector('#duration_slider');
+let show_duration = document.querySelector('#show_duration');
+let track_image = document.querySelector('#track_image');
+let auto_play = document.querySelector('#auto');
+let present = document.querySelector('#present');
+let total = document.querySelector('#total');
+let artist = document.querySelector('#artist');
+
+
+let timer;
+let autoplay = 0;
+
+let index_no = 0;
+let Playing_song = false;
+
+
+// create audio Element
+let track = document.createElement('audio');
+
+
+// all song list
+let All_song = [
+    {
+        name: "first song",
+        path: "music/song1.mp3",
+        img: "img/img1.jpg",
+        singer: "first singer"
+    },
+    {
+        name: "second song",
+        path: "music/song2.mp3",
+        img: "img/img2.jpg",
+        singer: "second singer"
+    },
+    {
+        name: "third song",
+        path: "music/song3.mp3",
+        img: "img/img3.jpg",
+        singer: "third singer"
+    },
+    {
+        name: "fourth song",
+        path: "music/song4.mp3",
+        img: "img/img4.jpg",
+        singer: "fourth singer"
+    },
+    {
+        name: "fifth song",
+        path: "music/song5.mp3",
+        img: "img/img5.jpg",
+        singer: "fifth singer"
+    }
+];
 
 
 
+// all function
+// function load the track
+function load_track(index_no) {
+    clearInterval(timer);
+    reset_slider();
+
+    track.src = All_song[index_no].path;
+    title.innerHTML = All_song[index_no].name;
+    track_image.src = All_song[index_no].img;
+    artist.innerHTML = All_song[index_no].singer;
+    track.load();
+
+    // 음악 위치 슬라이더 값을 조절하는데 쓰인다.
+    timer = setInterval(range_slider, 1000);
+    // 오른쪽 상단에 음악 숫자 카운트가 노래 순서 변경하면 바뀐다.
+    total.innerHTML = All_song.length;
+    present.innerHTML = index_no + 1;
+    
+}
+load_track(index_no);
+
+
+// mute sound
+function mute_sound() {
+    track.volume = 0;
+    volume.value = 0;
+    volume_show.innerHTML = 0;
+};
 
 
 
+// checking the song is playing or not
+function justplay(){
+    if(Playing_song == false){
+        playsong();
+    }else{
+        pausesong();
+    }
+};
+
+// reset song slider bar 음악 위치 설정해도 다음 음악 선택하면 처음부터 실행된다.
+function reset_slider() {
+    slider.value = 0;
+}
+
+// play song 함수로 플레이 버튼 누르면 음악이 실행된다.
+function playsong(){
+    track.play();
+    Playing_song = true;
+    play.innerHTML = '<i class="fa fa-pause"></i>';
+}
+
+// pause song 함수로 멈춤 버튼을 누르면 음악이 중단된다.
+function pausesong(){
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<i class="fa fa-play"></i>';
+}
+
+// next song 함수로 다음 음악 선택하기
+function next_song() {
+    if (index_no < All_song.length - 1){
+        index_no += 1;
+        load_track(index_no);
+        playsong(); //이걸 삭제하면 넘어가기만 하고 실행은 안된다.
+    } else {
+        index_no = 0;
+        load_track(index_no);
+        playsong(); //이걸 삭제하면 넘어가기만 하고 실행은 안된다.
+    };
+};
+
+// preivious song 함수로 이전 음악 선택하기
+function previous_song() {
+    if(index_no > 0){
+        index_no -= 1;
+        load_track(index_no);
+        playsong();
+    }else{
+        index_no = All_song.length;
+        load_track(index_no);
+        playsong();
+    };
+};
+
+
+// change volume  음량조정
+function volume_change() {
+    volume_show.innerHTML = recent_volume.value;
+    track.volume = recent_volume.value / 100;
+};
+
+// change slider position 음악 플레이 위치
+function change_duration() {
+    slider_position = track.duration * (slider.value / 100);
+    track.currentTime = slider_position;
+}
+
+// autoplay function
+function autoplay_switch() {
+    if(autoplay == 1){
+        autoplay = 0;
+        auto_play.style.background = "rgba(255,255,255,0.2)";
+    }else{
+        autoplay = 1;
+        auto_play.style.background = "#ff8a65";
+    }
+}
+
+function range_slider() {
+    let position = 0;
+
+    // update slider position 음악이 시작되면 음악이 간 만큼 슬라이더 바가 움직인다.
+    if(!isNaN(track.duration)){
+        position = track.currentTime * (100 / track.duration);
+        slider.value = position;
+    }
+
+    // function will run when the song over 음악이 끝나면 다음 음악이 나온다.
+    if(track.ended){
+        play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+        if(autoplay == 1){
+            index_no += 1;
+            load_track(index_no);
+            playsong();
+        }
+    }
+}
+
+// 뮤직박스 스크립트 끝
 
 
 
