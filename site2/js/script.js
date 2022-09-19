@@ -58,7 +58,7 @@ let recent_volume = document.querySelector('#volume');
 let volume_show = document.querySelector('#volume_show');
 let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('#show_duration');
-let track_image = document.querySelector('#track_image');
+// let track_image = document.querySelector('#track_image');
 let auto_play = document.querySelector('#auto');
 let present = document.querySelector('#present');
 let total = document.querySelector('#total');
@@ -79,35 +79,44 @@ let track = document.createElement('audio');
 // all song list
 let All_song = [
     {
-        name: "first song",
-        path: "music/song1.mp3",
-        img: "img/img1.jpg",
-        singer: "first singer"
+        name: "The Rebel Path Cello Version",
+        path: "music/The Rebel Path Cello Version.mp3",
+        // img: "img/img1.jpg",
+        singer: "Cyberpunk 2077"
     },
     {
-        name: "second song",
-        path: "music/song2.mp3",
-        img: "img/img2.jpg",
-        singer: "second singer"
+        name: "RESIST AND DISORDER",
+        path: "music/RESIST AND DISORDER.mp3",
+        // img: "img/img2.jpg",
+        singer: "Jason Charles Miller & Jamison Boaz"
     },
     {
-        name: "third song",
-        path: "music/song3.mp3",
-        img: "img/img3.jpg",
-        singer: "third singer"
+        name: "Game of Thrones - House of the Dragon",
+        path: "music/House of the Dragon Opening Theme.mp3",
+        // img: "img/img3.jpg",
+        singer: "Gingertail Cover"
     },
     {
-        name: "fourth song",
-        path: "music/song4.mp3",
-        img: "img/img4.jpg",
-        singer: "fourth singer"
+        name: "Heroes Of Might And Magic IV - Order Town Theme",
+        path: "music/Order Town Theme.mp3",
+        // img: "img/img4.jpg",
+        singer: " Cover by Roman"
     },
     {
-        name: "fifth song",
-        path: "music/song5.mp3",
-        img: "img/img5.jpg",
-        singer: "fifth singer"
-    }
+        name: "Heroes of Might and Magic IV - The Mountain Song",
+        path: "music/The Mountain Song.mp3",
+        // img: "img/img5.jpg",
+        singer: "Cover by Dryante"
+    },
+    {
+      name: "Heroes of Might and Magic 6 Music - Summer and Winter Plains Game Soundtrack Mix",
+      path: "music/Summer and Winter Plains Game Soundtrack Mix.mp3",
+      // img: "img/img5.jpg",
+      singer: "Might & Magic Heroes 6"
+  }
+
+    
+
 ];
 
 
@@ -120,7 +129,7 @@ function load_track(index_no) {
 
     track.src = All_song[index_no].path;
     title.innerHTML = All_song[index_no].name;
-    track_image.src = All_song[index_no].img;
+    // track_image.src = All_song[index_no].img;
     artist.innerHTML = All_song[index_no].singer;
     track.load();
 
