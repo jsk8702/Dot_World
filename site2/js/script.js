@@ -94,13 +94,13 @@ let All_song = [
         name: "Game of Thrones - House of the Dragon",
         path: "music/House of the Dragon Opening Theme.mp3",
         // img: "img/img3.jpg",
-        singer: "Gingertail Cover"
+        singer: "Cover by Alina Gingertail"
     },
     {
         name: "Heroes Of Might And Magic IV - Order Town Theme",
         path: "music/Order Town Theme.mp3",
         // img: "img/img4.jpg",
-        singer: " Cover by Roman"
+        singer: "Cover by Roman"
     },
     {
         name: "Heroes of Might and Magic IV - The Mountain Song",
@@ -109,11 +109,17 @@ let All_song = [
         singer: "Cover by Dryante"
     },
     {
-      name: "Heroes of Might and Magic 6 Music - Summer and Winter Plains Game Soundtrack Mix",
+      name: "Heroes of Might and Magic 6 - Summer and Winter Plains",
       path: "music/Summer and Winter Plains Game Soundtrack Mix.mp3",
       // img: "img/img5.jpg",
       singer: "Might & Magic Heroes 6"
-  }
+    },
+    {
+      name: "Heroes of Might and Magic IV - Hope",
+      path: "music/Hope Theme.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cover by Alina Gingertail"
+    }
 
     
 
