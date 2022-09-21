@@ -19,9 +19,9 @@ $(document).ready(function () {
     $(this).find(".nav_inner_sub_menu").stop().slideToggle();
   });
   // 해당 메뉴 영역을 나가면 서브메뉴가 닫힌다.
-  // $(".nav_inner_sub_main").mouseleave(function(){
-  //   $(this).find(".nav_inner_sub_menu").stop().slideUp();
-  // });
+  $(".nav_inner_sub_main").mouseleave(function(){
+    $(this).find(".nav_inner_sub_menu").stop().slideUp();
+  });
 
   // 서브 메뉴를 클릭하면 햄버거 메뉴 전체가 사라진다.
   $(".nav_inner_sub_menu").click(function(){
@@ -82,7 +82,7 @@ let All_song = [
         name: "The Rebel Path Cello Version",
         path: "music/The Rebel Path Cello Version.mp3",
         // img: "img/img1.jpg",
-        singer: "Cyberpunk 2077"
+        singer: "Cyberpunk 2077 OST"
     },
     {
         name: "RESIST AND DISORDER",
@@ -97,31 +97,53 @@ let All_song = [
         singer: "Cover by Alina Gingertail"
     },
     {
-        name: "Heroes Of Might And Magic IV - Order Town Theme",
+        name: "HOMM IV - Order Town Theme",
         path: "music/Order Town Theme.mp3",
         // img: "img/img4.jpg",
         singer: "Cover by Roman"
     },
     {
-        name: "Heroes of Might and Magic IV - The Mountain Song",
+        name: "HOMM IV - The Mountain Song",
         path: "music/The Mountain Song.mp3",
         // img: "img/img5.jpg",
         singer: "Cover by Dryante"
     },
     {
-      name: "Heroes of Might and Magic 6 - Summer and Winter Plains",
+      name: "HOMM 6 - Summer and Winter Plains",
       path: "music/Summer and Winter Plains Game Soundtrack Mix.mp3",
       // img: "img/img5.jpg",
-      singer: "Might & Magic Heroes 6"
+      singer: "Might & Magic Heroes 6 OST"
     },
     {
-      name: "Heroes of Might and Magic IV - Hope",
+      name: "HOMM IV - Hope",
       path: "music/Hope Theme.mp3",
       // img: "img/img5.jpg",
       singer: "Cover by Alina Gingertail"
+    },
+    {
+      name: "The Poet And The Muse",
+      path: "music/The Poet And The Muse.mp3",
+      // img: "img/img5.jpg",
+      singer: "Old Gods Of Asgard"
+    },
+    {
+      name: "The Wellerman",
+      path: "music/The Wellerman Gingertail Cover.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cover by Alina Gingertail"
+    },
+    {
+      name: "Tanz mit mir",
+      path: "music/Tanz mit mir Gingertail Cover.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cover by Alina Gingertail"
+    },
+    {
+      name: "Steel for Humans",
+      path: "music/Steel for Humans Extended Version.mp3",
+      // img: "img/img5.jpg",
+      singer: "The Witcher 3 OST"
     }
-
-    
 
 ];
 
