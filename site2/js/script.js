@@ -143,7 +143,27 @@ let All_song = [
       path: "music/Steel for Humans Extended Version.mp3",
       // img: "img/img5.jpg",
       singer: "The Witcher 3 OST"
+    },
+    {
+      name: "I Really Want to Stay at Your House",
+      path: "music/I Really Want to Stay at Your House.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cyberpunk 2077 OST"
+    },
+    {
+      name: "Campfire song",
+      path: "music/Campfire song.mp3",
+      // img: "img/img5.jpg",
+      singer: "S.T.A.L.K.E.R. OST"
+    },
+    {
+      name: "Friendships",
+      path: "music/Friendships.mp3",
+      // img: "img/img5.jpg",
+      singer: "Pascal Letoublon, Leony"
     }
+
+    
 
 ];
 
