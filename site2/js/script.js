@@ -161,9 +161,20 @@ let All_song = [
       path: "music/Friendships.mp3",
       // img: "img/img5.jpg",
       singer: "Pascal Letoublon, Leony"
+    },
+    {
+      name: "Dancin (KRONO Remix)",
+      path: "music/Aaron Smith  Dancin KRONO Remix.mp3",
+      // img: "img/img5.jpg",
+      singer: "Aaron Smith"
+    },
+    {
+      name: "HOMM IV - Floating Across Water",
+      path: "music/Floating Across Water.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cover by ChequerChequer"
     }
 
-    
 
 ];
 
