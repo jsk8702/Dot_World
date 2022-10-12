@@ -173,7 +173,39 @@ let All_song = [
       path: "music/Floating Across Water.mp3",
       // img: "img/img5.jpg",
       singer: "Cover by ChequerChequer"
+    },
+    {
+      name: "Take on Me",
+      path: "music/Take on Me.mp3",
+      // img: "img/img5.jpg",
+      singer: "a-ha"
+    },
+    {
+      name: "one way ticket",
+      path: "music/one way ticket.mp3",
+      // img: "img/img5.jpg",
+      singer: "eruption"
+    },
+    {
+      name: "Hotel California",
+      path: "music/Hotel California.mp3",
+      // img: "img/img5.jpg",
+      singer: "Eagles"
+    },
+    {
+      name: "Hotel California",
+      path: "music/Hotel California.mp3",
+      // img: "img/img5.jpg",
+      singer: "Eagles"
+    },
+    {
+      name: "Stayin Alive",
+      path: "music/Stayin Alive.mp3",
+      // img: "img/img5.jpg",
+      singer: "Bee Gees"
     }
+
+    
 
 
 ];
@@ -380,3 +412,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", lazyload);
   }
 })
+
+
+// 댓글 첨삭 스크립트
