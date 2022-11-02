@@ -8,6 +8,7 @@
     <title>감성 갤러리2</title>
     <!-- 폰트어썸 cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- 외부 초기화 시트 -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- swpier cdn -->
@@ -936,6 +937,24 @@
                     <div class="img_inside">
                       <a href="https://www.pinterest.co.kr/pin/504966176973053398/">
                         <img class="lazy" data-src="https://i.pinimg.com/originals/95/36/9b/95369ba76064a58c0d8ed6a840b3a361.gif">
+                      </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-title"><h2><em>38. </em>morebuildingsandfood</h2></div>
+                    <div class="img_inside">
+                      <a href="https://www.pinterest.co.kr/pin/764204630505273395/">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/7e/09/7d/7e097db2ce00b647b9c1e9608f26e902.gif">
+                      </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-title"><h2><em>39. </em>Neo Egypt by gupman on DeviantArt</h2></div>
+                    <div class="img_inside">
+                      <a href="https://www.pinterest.co.kr/pin/717761259373816922/">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/1f/6a/7f/1f6a7f9bbfc1b26414fa359e2c83866b.gif">
                       </a>
                     </div>
                 </div>
@@ -2323,6 +2342,15 @@
                     <div class="img_inside">
                       <a href="https://www.pinterest.co.kr/pin/807199933229236101/">
                         <img class="lazy" data-src="https://i.pinimg.com/originals/8f/12/03/8f12030160fd5c785665f3a0a175d97a.gif">
+                      </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-title"><h2><em>115. </em>NeonDreams</h2></div>
+                    <div class="img_inside">
+                      <a href="https://www.pinterest.co.kr/pin/478577897916818143/">
+                        <img class="lazy" data-src="https://i.pinimg.com/originals/b8/63/57/b863572b2bf8a8799bd8c266bbfbfce4.gif">
                       </a>
                     </div>
                 </div>
@@ -3729,8 +3757,23 @@
 
           <!-- 게시판 갤러리 시작 -->
           <article id="board" class="tab">
-            <h1>공사중</h1>
-            <!-- https://ansohxxn.github.io/blog/utterances/ 디스커스 같은 댓글 기능 구현하기 -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- <h1>공사중</h1> -->
+              <!-- https://ansohxxn.github.io/blog/utterances/ 디스커스 같은 댓글 기능 구현하기 -->
+              <!-- 해당 설정 부분: https://avengersrhydon1121.tistory.com/65 -->
+              <div id="form-commentInfo">
+                <div id="comment-count">댓글 <span id="count">0</span></div>
+                <input id="comment-input" placeholder="댓글을 입력해 주세요.">
+                <button id="submit">등록</button>
+              </div>
+              <div id=comments>
+          
+              </div>
+              </div>
+              
+            </div>
+            
           </article>
           <!-- 게시판 갤러리 갤러리 끝 -->
 
