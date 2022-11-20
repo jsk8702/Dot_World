@@ -193,17 +193,76 @@ let All_song = [
       singer: "Eagles"
     },
     {
-      name: "Hotel California",
-      path: "music/Hotel California.mp3",
+      name: "The Deli - 5:32PM",
+      path: "music/532PM.mp3",
       // img: "img/img5.jpg",
-      singer: "Eagles"
+      singer: "Dreamwave"
     },
     {
       name: "Stayin Alive",
       path: "music/Stayin Alive.mp3",
       // img: "img/img5.jpg",
       singer: "Bee Gees"
+    },
+    {
+      name: "Prince of Persia - Time Only Knows",
+      path: "music/Time Only Knows.mp3",
+      // img: "img/img5.jpg",
+      singer: "Cover by Alina Gingertail"
+    },
+    {
+      name: "(FREE) lofi type beat - Deep In Ur Eyez",
+      path: "music/Deep In Ur Eyez.mp3",
+      // img: "img/img5.jpg",
+      singer: "Nayture"
+    },
+    {
+      name: "Dreams",
+      path: "music/Dreams.mp3",
+      // img: "img/img5.jpg",
+      singer: "Joakim Karud"
+    },
+    {
+      name: "Wandering Through The Clouds",
+      path: "music/Wandering Through The Clouds.mp3",
+      // img: "img/img5.jpg",
+      singer: "MBSY"
+    },
+    {
+      name: "Better Days",
+      path: "music/Better Days.mp3",
+      // img: "img/img5.jpg",
+      singer: "LAKEY INSPIRED"
+    },
+    {
+      name: "Domo - alone",
+      path: "music/alone.mp3",
+      // img: "img/img5.jpg",
+      singer: "Dreamwave"
+    },
+    {
+      name: "Time For a Coffee",
+      path: "music/Time For a Coffee.mp3",
+      // img: "img/img5.jpg",
+      singer: "bxeset"
+    },
+    {
+      name: "Dark Is The Night",
+      path: "music/Dark Is The Night.mp3",
+      // img: "img/img5.jpg",
+      singer: "Nikita Bogoslovsky, Mark Bernes"
+    },
+    {
+      name: "Midnight Snack Original Mix",
+      path: "music/Midnight Snack Original Mix.mp3",
+      // img: "img/img5.jpg",
+      singer: "Purrple Cat"
     }
+
+    
+    
+
+    
 
     
 
