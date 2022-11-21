@@ -30,6 +30,8 @@ header .header_inner {
   height: 100%; 
 }
 
+
+
 /* 헤더 타이틀 설정 */
 .header_inner_bg {
   position: absolute;
@@ -499,19 +501,9 @@ section {
 
 
 /* 게시판 갤러리 스타일 지정 */
-#form-commentInfo{
-  width: 100%;
-}
-
-#comment-count{
-  margin-bottom: 10px; 
-}
-
-#comment-input{
-  width: 50%;
-  height: 3.3em;
-}
-
+#form-commentInfo{width: 100%;}
+#comment-count{margin-bottom: 10px;}
+#comment-input{width: 50%; height: 3.3em;}
 #submit{
   background-color: rgb(0, 128,255);
   width: 5.5em;
@@ -520,24 +512,18 @@ section {
   font-weight: bold;
   color: aliceblue;
 }
-
 #voteUp, #voteDown{
   width: 3.5em;
   height: 1.9em;
-  background-color: aqua;    
+  background-color: aqua;
 }
-
-#comments{
-  margin-top: 10px;
-}
-
-.eachComment{   
-  width :50%; 
-  margin: 10px;  
-  padding: 0.5em; 
+#comments{margin-top: 10px;}
+.eachComment{
+  width :50%;
+  margin: 10px;
+  padding: 0.5em;
   border-bottom: 1px solid #c1bcba;
 }
-
 .eachComment .name{
   font-size: 1.5em;
   font-weight: bold;
@@ -545,12 +531,10 @@ section {
   display: flex;
   justify-content: space-between;
 }
-
 .eachComment .inputValue{
   font-size: 1.2em;
-  font-style: italic;    
+  font-style: italic;
 }
-
 .eachComment .time{
   font-size: 0.7em;
   /* color: #c1bcba; */
@@ -560,18 +544,15 @@ section {
   margin-bottom: 0.5em;
   
 }
-
-.eachComment .voteDiv{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.eachComment .deleteComment{
-  background-color: red;
-  color: aliceblue;
-}
+.eachComment .voteDiv{display: flex; justify-content: flex-end;}
+.eachComment .deleteComment{background-color: red; color: aliceblue;}
 
 
+/* ****************************************************** */
+
+/* PC 화면 설정 */
+/* PC 화면 헤더 설정 */
+.pc_header_inner {display: none;}
 
 
 

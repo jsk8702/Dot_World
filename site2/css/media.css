@@ -24,7 +24,7 @@
     }
 
     /* 사이트 제목 설정 */
-    header .header_inner h1 {
+    /* header .header_inner h1 {
         position: absolute;
         top: 50%;
         left: 1%;
@@ -32,12 +32,13 @@
         font-size: 24px;
         font-family: 'Gugi', cursive;
         text-shadow: none;
-    }
+    } */
 
-    /* nav 햄버거 버튼 아이콘 설정 */
-    .nav_inner .nav_inner_hamBtn {
-        display: none;
-    }
+    /* 모바일 헤더 메뉴 설정 */
+    .phone_header_inner {display: none;}
+
+    /* PC 헤더 메뉴 설정 */
+    .pc_header_inner {display: block;}
 
 
 }
