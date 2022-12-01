@@ -554,6 +554,19 @@ section {
 /* PC 화면 헤더 설정 */
 .pc_header_inner {display: none;}
 
+/* pc nav 설정 */
+.pc_nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc_nav > ul {
+  width: 100%;
+  height: 100%;
+}
+
 
 
 

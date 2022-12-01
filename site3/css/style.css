@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* body 기본 배경 설정 */
+body {
+    /* 배경화면 주소: https://www.pinterest.co.kr/pin/595038169530414559/ */
+    background-image: url("https://i.pinimg.com/564x/d7/8d/55/d78d55c36e1b7760fd9d9059495a4f00.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: black;
+}
+
+
+/* 홈으로 바로가기 설정 */
+.test_home {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 3em;
+    color: #000;
+}
+
+/* 컨테이너 기본 설정 */
+/* 배경 이미지 주소: https://www.reddit.com/r/wallpapers/comments/b1qj45/lost_in_the_city_4961x2494/?utm_source=ifttt */
+.container {
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("https://external-preview.redd.it/Q1CQQNbBA-sfUUXP8-5uSGvqoLj99ShDcm2K2PUwGF4.jpg?auto=webp&s=9710c314f1169e651b5facbedbc06ffa676df47f");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* contents 설정 */
+.contents {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* header 설정 */
+header {
+    width: 100%;
+    height: 10%;
+    background-color: aqua;
+}
+
+
+/* section 설정 */
+section {
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+
+
+/* footer 설정 */
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+}
