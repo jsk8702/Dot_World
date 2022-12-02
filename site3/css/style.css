@@ -8,6 +8,9 @@ body {
     background-size: contain;
     background-repeat: repeat-x;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 
@@ -15,29 +18,21 @@ body {
 .test_home {
     position: relative;
     top: 50%;
-    left: 50%;
-    font-size: 3em;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
     color: #000;
 }
 
 /* 컨테이너 기본 설정 */
-/* 배경 이미지 주소: https://www.reddit.com/r/wallpapers/comments/b1qj45/lost_in_the_city_4961x2494/?utm_source=ifttt */
-.container {
-    width: 1600px;
-    height: 100%;
-    margin: 0 auto;
-    background-image: url("https://external-preview.redd.it/Q1CQQNbBA-sfUUXP8-5uSGvqoLj99ShDcm2K2PUwGF4.jpg?auto=webp&s=9710c314f1169e651b5facbedbc06ffa676df47f");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+.container {width: 100%; height: auto}
 
 
 /* contents 설정 */
 .contents {
     width: 100%;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -49,13 +44,25 @@ header {
     width: 100%;
     height: 10%;
     background-color: aqua;
+    box-shadow: 0 5px 10px 5px;
 }
 
 
 /* section 설정 */
 section {
     width: 100%;
-    height: 80%;
+    /* height: auto; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* article 설정 */
+article {
+    width: 1600px;
+    height: 300px;
     background-color: red;
 }
 
