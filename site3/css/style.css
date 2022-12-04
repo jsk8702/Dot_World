@@ -1,17 +1,6 @@
 @charset "utf-8";
 
-/* body 기본 배경 설정 */
-body {
-    /* 배경화면 주소: https://www.pinterest.co.kr/pin/595038169530414559/ */
-    background-image: url("https://i.pinimg.com/564x/d7/8d/55/d78d55c36e1b7760fd9d9059495a4f00.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+
 
 
 /* 홈으로 바로가기 설정 */
@@ -25,33 +14,25 @@ body {
 }
 
 /* 컨테이너 기본 설정 */
-.container {width: 100%; height: auto}
-
-
-/* contents 설정 */
-.contents {
+.container {width: 100%; height: 100%;}
+.container_bg {
     width: 100%;
     height: 100%;
-    /* background-color: black; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    /* 배경화면 주소: https://www.pinterest.co.kr/pin/595038169530414559/ */
+    background-image: url("https://i.pinimg.com/564x/d7/8d/55/d78d55c36e1b7760fd9d9059495a4f00.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: black;
+    position: fixed;
+    z-index: -10;
 }
 
-
-/* header 설정 */
-header {
+/* contents 기본 설정 */
+.contents{
     width: 100%;
-    height: 10%;
-    background-color: aqua;
-    box-shadow: 0 5px 10px 5px;
-}
-
-
-/* section 설정 */
-section {
-    width: 100%;
-    /* height: auto; */
+    height: auto;
+    margin: 0 auto;
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -59,17 +40,63 @@ section {
     flex-direction: column;
 }
 
-/* article 설정 */
-article {
-    width: 1600px;
-    height: 300px;
-    background-color: red;
+/* header 설정 */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rebeccapurple;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 5px #000;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+/* header nav 설정 */
+nav {
+    width: 100%;
+    height: 50%;
+    background-color: darkslateblue;
 }
 
 
-/* footer 설정 */
+/* section 설정 */
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* article 설정 */
+article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* art_head 설정 */
+.art_head {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+/* art_body 설정 */
+.art_body {
+    width: 1600px;
+    height: 800px;
+    background-color: burlywood;
+}
+
+
+
+/* footer */
 footer {
     width: 100%;
-    height: 10%;
-    background-color: blue;
+    height: 100px;
+    background-color: green;
 }
