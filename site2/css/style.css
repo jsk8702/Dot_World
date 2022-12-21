@@ -31,19 +31,20 @@ body {
   text-align: center;
 }
 
-.container_title h1 {
+.container_title > h1 {
   font-style: none;
   font-size: 28px;
   font-family: 'Chivo Mono', monospace;
   text-shadow: 3px 2px #aaa;
+  /* margin-bottom: 2px; */
 }
-.container_title p {
+.container_title > p {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
-.container_title h3 {
-  
+
+.container_title > h3 {
   font-size: 22px;
   font-family: 'Gugi', cursive;
   text-shadow: 3px 2px #aaa;
