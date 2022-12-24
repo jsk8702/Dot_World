@@ -36,7 +36,7 @@ body {
   font-size: 28px;
   font-family: 'Chivo Mono', monospace;
   text-shadow: 3px 2px #aaa;
-  /* margin-bottom: 2px; */
+  
 }
 .container_title > p {
   font-size: 18px;
@@ -467,7 +467,7 @@ section {
   text-align: center;
   width: 100%;
   height: calc(100% - 40px);
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   border-bottom: 2px solid #fff;
 }
 
@@ -534,7 +534,7 @@ section {
   align-items: center;
   width: 100%;
   height: calc(100% - 40px);
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .swiper-slide .img_inside a {
