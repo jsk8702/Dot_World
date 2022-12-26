@@ -41,14 +41,18 @@ $(document).ready(function () {
     $(".nav_inner_musicMenu").removeClass("active");
   });  
 
+
+
+  // 각 슬라이드의 번호 자동 생성
+  // const emNum = $("swiper-slide-title h2 em").index() + 1;
+  // document.querySelector("swiper-slide-title h2 em").innerHTML = emNum + ".";
+
     
 });
 
 
 
 // 뮤직박스 스크립트
-
-
 // 변수 설정
 let previous = document.querySelector('#pre');
 let play = document.querySelector('#play');
@@ -472,6 +476,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
-// ******************************************************************************************
-// 게시판 갤러리 댓글 첨삭 스크립트
+
 
