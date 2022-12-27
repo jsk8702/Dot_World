@@ -43,9 +43,9 @@ $(document).ready(function () {
 
 
 
-  // 각 슬라이드의 번호 자동 생성
-  // const emNum = $("swiper-slide-title h2 em").index() + 1;
-  // document.querySelector("swiper-slide-title h2 em").innerHTML = emNum + ".";
+  // 각 슬라이드의 번호 자동 생성(참고 사이트)
+  // https://kimyang-sun.tistory.com/entry/HTML-CSS-jQuery-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%8D%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%88%ED%98%B8-%EB%A7%A4%EA%B8%B0%EA%B8%B0 
+  
 
     
 });
@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
   }
-})
+});
 
 
 
