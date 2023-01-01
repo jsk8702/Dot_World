@@ -44,8 +44,36 @@ $(document).ready(function () {
 
 
   // 각 슬라이드의 번호 자동 생성(참고 사이트)
+  // 슬라이드 앞으로 가면 번호 자동으로 늘어남
+  const slideIndex = $(".swiper-slide").index(this);
+  var slideResult = $('.swiper-slide-title > h2 > em');
+  slideResult.each(function(slideIndex, sCount){
+    sCount.innerHTML = slideIndex + '. ';
+  });
+
+  // const items = $(".swiper-slide-title > h2 > em");
+  // var emSlide = $(".swiper-slide").index(this);
+  // var emAdd =+1;
+  // // const idx = 1;
+  // items.each(function(idx, item) {
+  //   idx = emSlide + emAdd;
+  //   item.innerHTML = idx + ". ";
+  // });
+
+  //https://webclub.tistory.com/455 참고 하기
+  // const slideCount = $('.swiper-slide-title h2 em');
+  // const slideIndex = $(".swiper-slide").index(this);
+  // var slideAdd = ++1;
+  // slideCount.each(function(slideNum, pageNum){
+    
+  //   var slideNum = slideIndex + slideAdd;
+  //   pageNum.innerHTML = slideNum + ". ";
+  // });
   // https://kimyang-sun.tistory.com/entry/HTML-CSS-jQuery-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%8D%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%88%ED%98%B8-%EB%A7%A4%EA%B8%B0%EA%B8%B0 
-  
+  // let slideIndex = $(".swiper-slide").index(this);
+  // let slideNum = ++1;
+  // let slideCount = slideIndex + slideNum;
+  // $('.swiper-slide > .swiper-slide-title > h2 > em').text(slideIndex + '.' + ' ');
 
     
 });
