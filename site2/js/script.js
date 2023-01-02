@@ -40,26 +40,6 @@ $(document).ready(function () {
   $(".nav_inner_musicMenu_close").click(function(){
     $(".nav_inner_musicMenu").removeClass("active");
   });  
-
-
-
-  // 각 슬라이드의 번호 자동 생성(참고 사이트)
-  // 슬라이드 앞으로 가면 번호 자동으로 늘어남
-  // const slideIndex = $(".swiper-slide").index(this);
-  // const slideIndex =  $(".swiper-pagination-current").text();
-  // const slideResult = $('.swiper-slide-title > h2 > em');
-  // function slideNum (){
-  //   slideResult.innerHTML = slideIndex + '. ';
-  // };
-
-
-
-  // var slideResult = $('.swiper-slide-title > h2 > em');
-  // slideResult.each(function(slideIndex, sCount){
-  //   sCount.innerHTML = slideIndex + '. ';
-  // });
-
-  
     
 });
 
