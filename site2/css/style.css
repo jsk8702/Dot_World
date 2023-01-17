@@ -475,6 +475,11 @@ section {
   color: #fff;
   font-size: 50px;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin: 15px 0;
+}
+.aside_inner_body h6 {
+  margin-top: 35px;
+  color: #558ABB;
 }
 
 .aside_inner_body p {}
