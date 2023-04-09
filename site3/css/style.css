@@ -64,7 +64,7 @@ nav {
 /* section 설정 */
 section {
     width: 1600px;
-    height: 2000px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,11 +74,12 @@ section {
 /* article 설정 */
 article {
     width: 100%;
-    height: auto;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: blue;
     
 }
 
