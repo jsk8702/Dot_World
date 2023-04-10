@@ -83,6 +83,25 @@ article {
     
 }
 
+/* 슬라이드 테스트 */
+.article_section input[id*="slide"] {display: none;}
+.article_section .slide_wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.article_section .slide_wrap .slide_list {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+/* article > ul {white-space: nowrap;}
+
+article > ul > li {
+    display: inline-block;
+    width: 100%;
+} */
+
 
 
 
