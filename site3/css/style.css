@@ -19,179 +19,44 @@
 /* 임시박스 종료 */
 
 
-/* 컨테이너 기본 설정 */
-.container {
-    width: 100%; 
-    height: 100%;
-}
+/* 웹 바탕화면 배경 */
+/* 배경 공통 사항 */
 .container_bg {
-    width: 100%;
+    width: 1920px;
     height: 100%;
-    /* 배경화면 주소: https://www.pinterest.co.kr/pin/595038169530414559/ */
-    background-image: url("https://i.pinimg.com/564x/d7/8d/55/d78d55c36e1b7760fd9d9059495a4f00.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-color: black;
-    position: fixed;
-    z-index: -10;
-}
-
-/* contents 기본 설정 */
-.contents{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* header 설정 */
-header {
-    width: 100%;
-    height: 150px;
-    background-color: rebeccapurple;
-    box-sizing: border-box;
-    box-shadow: 0px 5px 10px 5px #000;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-}
-/* header nav 설정 */
-nav {
-    width: 100%;
-    height: 50%;
-    background-color: darkslateblue;
-}
-
-
-/* section 설정 */
-section {
-    width: 100%; /* pc 화면에서는 여기를 1600px 로 추천 */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-/* article 설정 */
-article {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(255,255,255,0.6);
-    /* padding: 30px; */
-    overflow: hidden;
-    margin: 200px 0  0 0;
-}
-article:nth-last-child(1) {margin-bottom: 200px;}
-
-/* 슬라이드 기능 참고: https://youtu.be/7k8BPFfXRL0 */
-/* 슬라이드 공용 설정 */
-article .slide_page {
-    width: 100%;
-    height: 100%;
-    /* background-color: green; */
-}
-
-/* 슬라이드 상단 타이틀 설정 */
-.slider_title {
-    width: 100%; 
-    height: 50px; 
-    border-top: 2px solid rgba(255,255,255,0.8);
-}
-.slider_title h1 {
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-/* 슬라이드 하단 페이지 설정 */
-.slider {
-    width: auto;
-    height: auto; /* pc 화면에서는 여기를 750px로 추천 */
-    position: relative;
-    border: 2px solid rgba(255,255,255,0.8);
-    border-left: none;
-    border-right: none;
-}
-
-.slides {
-    width: auto;
-    height: 100%;
-    background-size: cover ;
-    border-radius: 10px;
-    animation: fade 1.5s;
-    display: none;
-}
-.slides a {display: block; width: 100%; height: 100%;}
-.slides a img {
-    display: block; 
-    width: 100%; 
-    height: 100%; 
-    font-size: 0;
-    object-fit: contain;
-}
-
-.slide_prev, .slide_next {
-    cursor: pointer;
-    position: absolute;
-    top: 0%;
-    color: transparent;
-    font-size: 2rem;
-    font-weight: bolder;
-    transition: 0.6s ease;
-    width: 15%;
-    height: 100%;
-    text-align: center;
-    
-}
-.slide_next {right: 0;}
-
-.slide_prev > h3, .slide_next > h3 {
-    position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-user-select: none; 
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    overflow: hidden;
 }
-
-.slide_prev:hover, .slide_next:hover {
-    background-color: rgba(190,190,190,0.5);
-    color: rgb(248,248,248);
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    } to {
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
-
-
-/* footer */
-footer {
+.container_bg_page {
     width: 100%;
-    height: 100px;
-    background-color: green;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* 첫번째 배경 */
+.bg1 {
+    background-image: url("https://i.pinimg.com/originals/16/3c/e1/163ce1e36ab9b04681be17ef69031c18.jpg");
+}
+/* 두번째 배경 */
+.bg2 {
+    background-image: url("https://i.pinimg.com/originals/fb/88/d0/fb88d0d4b3f679bb48a029d12524b818.gif");
+    opacity: 0.2;
+}
+
+
+/* container 전체 설정 */
+.container {
+    position: relative;
+    width: 1920px;
+    height: 100%;
+    background-color: blue;
+    opacity: 0.4;
+    margin: 0 auto;
+    overflow: hidden;
 }

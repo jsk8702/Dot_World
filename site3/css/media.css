@@ -2,9 +2,19 @@
 
 /* 모바일( 360px ~ 412px 너비까지 적용) */
 /* 갤럭시 S20  울트라 비율: 1440 X 3200 */
-@media (min-width: 360px) and (max-width: 412px){
+@media (max-width: 412px){
 
-    
+
+    /* 웹 바탕화면 배경 */
+    /* 배경 공통 사항 */
+    .container_bg {
+        width: 100%;
+    }
+
+    /* container 전체 설정 */
+    .container {
+        width: 100%;
+    }
     
     
 
@@ -12,3 +22,15 @@
 
 }
 
+/* PC( 1920px ~ 2560px 이상 적용) */
+@media (min-width: 1920px) and (max-width: 2561px){
+
+    /* section 설정 */
+/* section {
+    width: 1600px;
+    
+} */
+
+ 
+
+}
