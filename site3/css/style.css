@@ -37,16 +37,19 @@
     background-position: center;
     background-size: cover;
     position: absolute;
+    /* top: 0;
+    left: 0; */
 }
 
 /* 첫번째 배경 */
 .bg1 {
     background-image: url("https://i.pinimg.com/originals/16/3c/e1/163ce1e36ab9b04681be17ef69031c18.jpg");
+    opacity: 0.6;
 }
 /* 두번째 배경 */
 .bg2 {
     background-image: url("https://i.pinimg.com/originals/fb/88/d0/fb88d0d4b3f679bb48a029d12524b818.gif");
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 
@@ -55,8 +58,30 @@
     position: relative;
     width: 1920px;
     height: 100%;
-    background-color: blue;
-    opacity: 0.4;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    
+}
+
+/* section */
+section {
+    width: 100%;
+    height: 80%;
+    background-color: blue;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: green;
 }

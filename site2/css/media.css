@@ -7,7 +7,19 @@
 }
 
 
+/* PC( 1920px ~ 2560px 이상 적용) */
+@media (min-width: 1920px) and (max-width: 2561px){
 
+/* 햄버거 메뉴 설정 */
+.nav_inner .nav_inner_menu {
+    
+    left: -10%;
+    width: 10%;
+  }
+
+ 
+
+}
 
 
 
