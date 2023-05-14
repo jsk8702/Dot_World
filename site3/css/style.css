@@ -57,12 +57,17 @@ body {position: relative;}
 /* container 전체 설정 */
 .container {
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1920px;
     height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+    /* margin: 0 auto; */
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
+    /* display: none; */
+    /* opacity: 0.3; */
 }
 
 /* header */
@@ -70,7 +75,7 @@ header {
     width: 100%;
     height: 10%;
     background-color: red;
-    
+    padding: 20px;
 }
 
 /* section */
@@ -78,6 +83,7 @@ section {
     width: 100%;
     height: auto;
     background-color: blue;
+    padding: 20px;
 }
 
 
@@ -85,14 +91,14 @@ section {
     width: 100%;
     height: 100%;
     
-    /* position: relative; */
+    position: relative;
     display: flex;
 }
 #disqus_thread {
     /* position: absolute; */
     width: 100%;
     height: 100%;
-    padding: 20px;
+    
     box-sizing: border-box;
     background-color: goldenrod;
     
@@ -104,4 +110,5 @@ footer {
     width: 100%;
     height: 10%;
     background-color: green;
+    padding: 20px;
 }
