@@ -1,51 +1,30 @@
 // 자바스크립트 설정
 
-// 1. 이미지 슬라이드 효과(https://www.youtube.com/watch?v=-1mJGh627R4)
-// 슬라이드1 설정
-let currSlide1 = 1;
-showSlide1(currSlide1);
+// 1. 이미지 슬라이드 효과(swiper slide 설정)
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
-function button_click1(num){
-  showSlide1((currSlide1 += num));
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-function showSlide1(num){
-  const slides = document.querySelectorAll(".slide1");
-  if(num > slides.length){
-    currSlide1 = 1;
-  } if(num<1){
-    currSlide1 = slides.length;
-  }
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  for(let i=0; i < slides.length; i++){
-    slides[i].style.display="none";
-  }slides[currSlide1 - 1].style.display="block";
-}
-
-
-// 슬라이드2 설정
-let currSlide2 = 1;
-showSlide2(currSlide2);
-
-function button_click2(num){
-  showSlide2((currSlide2 += num));
-}
-
-function showSlide2(num){
-  const slides = document.querySelectorAll(".slide2");
-  if(num > slides.length){
-    currSlide2 = 1;
-  } if(num<1){
-    currSlide2 = slides.length;
-  }
-
-  for(let i=0; i < slides.length; i++){
-    slides[i].style.display="none";
-  }slides[currSlide2 - 1].style.display="block";
-}
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 
-// 이미지 로딩 지연(lazy loading) 설정
+// 2. 이미지 로딩 지연(lazy loading) 설정
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;    
 

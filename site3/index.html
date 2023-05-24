@@ -7,6 +7,8 @@
     <title>감성 갤러리3</title>
     <!-- 기본 리셋 파일 -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- swiper slide CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- 반응형 미디어 쿼리 -->
@@ -28,6 +30,26 @@
                     Pagination progress,
                     Default 사용하기 (양쪽에 버튼 안나오게 하기)
                  -->
+                 <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </article>
             <article class="board_test">
                 <!-- https://blog.naver.com/rktdnjs/222807939475 댓글 기능 -->
@@ -61,6 +83,9 @@
         </section>
         <footer></footer>
     </div>
+    <!-- swiper slide 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

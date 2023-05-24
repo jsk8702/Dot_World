@@ -86,6 +86,12 @@ section {
     padding: 20px;
 }
 
+/* 슬라이드 설정 */
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
 /* 디스커스 토론방 설정 */
 .board_test {
     width: 100%;
