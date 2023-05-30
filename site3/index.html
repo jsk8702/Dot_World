@@ -25,30 +25,23 @@
         <header></header>
         <section>
             <article>
-                <!-- 슬라이드는 스와이퍼 사용하기, 구체적으로 
-                    Pagination fraction,
-                    Pagination progress,
-                    Default 사용하기 (양쪽에 버튼 안나오게 하기)
-                 -->
                  <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                 <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true" init="false">
+                    <swiper-slide>
+                        <img src="https://i.pinimg.com/originals/b0/c8/ca/b0c8ca3c715f23d9800482295b393100.gif" loading="lazy"
+                        alt="https://www.pinterest.co.kr/pin/203295370672206612/">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="https://i.pinimg.com/originals/cf/40/3c/cf403c717f774cb0832a51c573d6914d.gif" loading="lazy"
+                        alt="https://www.pinterest.co.kr/pin/454722893637463806/">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="https://i.pinimg.com/originals/9f/2d/49/9f2d49ed16586cf9629e7703cc67a3f0.gif" loading="lazy"
+                        alt="https://www.pinterest.co.kr/pin/604467581252467377/">
+                    </swiper-slide>
+                    <swiper-slide>Slide 4</swiper-slide>
+                  </swiper-container>
                 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </article>
             <article class="board_test">
@@ -83,8 +76,43 @@
         </section>
         <footer></footer>
     </div>
-    <!-- swiper slide 라이브러리 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- swiper slide 자바스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script>
+        const swiperEl = document.querySelector('swiper-container')
+        // 하단 현재 이미지 번호 설정
+        const params = {
+          injectStyles: [`
+          .swiper-pagination-bullet {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+          }
+    
+          .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+          }
+          `],
+          pagination: {
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+          },
+        }
+    
+        Object.assign(swiperEl, params)
+    
+        swiperEl.initialize();
+      </script>
     <script src="js/script.js"></script>
     
 </body>
