@@ -7,8 +7,8 @@
     <title>감성 갤러리3</title>
     <!-- 기본 리셋 파일 -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- swiper slide CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- 반응형 미디어 쿼리 -->
@@ -24,26 +24,85 @@
     <div class="container">
         <header></header>
         <section>
-            <article>
-                 <!-- Slider main container -->
-                 <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true" init="false">
-                    <swiper-slide>
-                        <img src="https://i.pinimg.com/originals/b0/c8/ca/b0c8ca3c715f23d9800482295b393100.gif" loading="lazy"
-                        alt="https://www.pinterest.co.kr/pin/203295370672206612/">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="https://i.pinimg.com/originals/cf/40/3c/cf403c717f774cb0832a51c573d6914d.gif" loading="lazy"
-                        alt="https://www.pinterest.co.kr/pin/454722893637463806/">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="https://i.pinimg.com/originals/9f/2d/49/9f2d49ed16586cf9629e7703cc67a3f0.gif" loading="lazy"
-                        alt="https://www.pinterest.co.kr/pin/604467581252467377/">
-                    </swiper-slide>
-                    <swiper-slide>Slide 4</swiper-slide>
-                  </swiper-container>
-                
+
+
+            <!-- 슬라이드 시험 -->
+            <!-- loading lazy EX: <img src="https://i.pinimg.com/originals/b0/c8/ca/b0c8ca3c715f23d9800482295b393100.gif" loading="lazy"> --> 
+
+            <article class="dot_slide">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>n8-bit on Twitter</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/1048916569435426901/">
+                                <img src="https://i.pinimg.com/564x/d7/69/f9/d769f900033eca6f67cd1ea52778524d.jpg">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>Last Moai by Retronator on DeviantArt</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/66709638223103769/">
+                                <img src="https://i.pinimg.com/564x/76/5b/b4/765bb4b56d4a59515f537eef2aa6b695.jpg" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>Dreamy Videogame GIFs Transport You to Another World</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/479351954101127085/">
+                                <img src="https://i.pinimg.com/originals/b2/b5/dd/b2b5ddefdd257ce461063638c046909b.gif" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>ArtStation - Explore</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/290482244719941564/">
+                                <img src="https://i.pinimg.com/564x/b0/ec/3f/b0ec3f359f6157b7e2b6c806bf01ef06.jpg" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>Heaven</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/472807660885477748/">
+                                <img src="https://i.pinimg.com/564x/49/bf/f4/49bff4c3f9355a9bb15a0a25da2b8a11.jpg" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>when noirlac doesn't source, tumblr loses!</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/715016878360742696/">
+                                <img src="https://i.pinimg.com/originals/20/ba/af/20baaf821557c58fa40bce69ca304c76.gif" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>noirlac</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/838443655644897408/">
+                                <img src="https://i.pinimg.com/originals/39/86/3b/39863b77b276dda35a335e33b045461c.gif" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>the timid teen-ager</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/43699058871285420/">
+                                <img src="https://i.pinimg.com/564x/4f/ef/cd/4fefcdcb999ee726264e8b5260108f17.jpg" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_title"><h3>The Starry Night-wallpaper</h3></div>
+                            <a href="https://www.pinterest.co.kr/pin/348043877465908470/">
+                                <img src="https://i.pinimg.com/564x/23/b8/74/23b8743ceb7e6b912948772efad2eeb4.jpg" loading="lazy">
+                            </a> 
+                            <div class="slide_number"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+                 
             </article>
+
+
             <article class="board_test">
                 <!-- https://blog.naver.com/rktdnjs/222807939475 댓글 기능 -->
                 <!-- 
@@ -73,46 +132,30 @@
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </article>
-        </section>
+          </section>
         <footer></footer>
     </div>
 
-    <!-- swiper slide 자바스크립트 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- 제이쿼리cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
     <script>
-        const swiperEl = document.querySelector('swiper-container')
-        // 하단 현재 이미지 번호 설정
-        const params = {
-          injectStyles: [`
-          .swiper-pagination-bullet {
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            font-size: 14px;
-            font-weight: bold;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);
-          }
-    
-          .swiper-pagination-bullet-active {
-            color: #fff;
-            background: #007aff;
-          }
-          `],
-          pagination: {
+        var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
             clickable: true,
             renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
-          },
-        }
+            
+        },
+        });
+    </script>
     
-        Object.assign(swiperEl, params)
-    
-        swiperEl.initialize();
-      </script>
     <script src="js/script.js"></script>
     
 </body>

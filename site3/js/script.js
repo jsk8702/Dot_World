@@ -1,27 +1,8 @@
 // 자바스크립트 설정
 
 // 1. 이미지 슬라이드 효과(swiper slide 설정)
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 
 
 // 2. 이미지 로딩 지연(lazy loading) 설정
