@@ -72,8 +72,65 @@ header {
     width: 100%;
     height: 10%;
     background-color: red;
-    padding: 20px;
 }
+
+/* 메뉴 공통 설정 */
+header nav {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
+
+header nav > ul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav > ul > li {}
+header nav > ul > li {}
+header nav > ul > li > h2 {}
+header nav > ul > li > h2 > a {}
+
+header nav > ul > li > ul {}
+header nav > ul > li > ul > li {}
+
+
+
+/* pc 화면 메뉴 설정 */
+header nav ul.pc_menu {
+  left: 0%;
+}
+.pc_menu_title {
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  border: 3px solid ;
+  margin-left: 1.5%;
+}
+.pc_menu_title:first-child {margin-left: 0;}
+.pc_menu_title > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+header nav ul li {}
+header nav ul li a{}
+
+/* 모바일 화면 메뉴 설정 */
+header nav ul.mobile_menu {
+  left: -100%;
+}
+/* 햄버거 메뉴 설정 */
+header nav ul.mobile_menu li ul {display: none;}
+header nav ul li a{}
 
 /* section */
 section {
