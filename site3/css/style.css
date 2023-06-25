@@ -91,13 +91,7 @@ header nav > ul {
   justify-content: center;
   align-items: center;
 }
-header nav > ul > li {}
-header nav > ul > li {}
-header nav > ul > li > h2 {}
-header nav > ul > li > h2 > a {}
 
-header nav > ul > li > ul {}
-header nav > ul > li > ul > li {}
 
 
 
@@ -105,7 +99,9 @@ header nav > ul > li > ul > li {}
 header nav ul.pc_menu {
   left: 0%;
 }
+/* 기본메뉴 설정 */
 .pc_menu_title {
+  position: relative;
   background-color: red;
   width: 200px;
   height: 50px;
@@ -119,10 +115,49 @@ header nav ul.pc_menu {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-header nav ul li {}
-header nav ul li a{}
+.pc_menu_title > a > h2 {
+  font-weight: normal;
+}
+/* 가운데 사이트 로고 */
+.site_name {
+  width: 350px;
+  height: 80px;
+}
+.site_name a h2 {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+
+/* 각 세부 메뉴 설정 */
+.pc_menu_list {
+  position: absolute;
+  bottom: -203px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #007aff;
+  z-index: 10;
+  visibility: hidden;
+}
+.pc_menu_list > li {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid;
+}
+.pc_menu_list > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* 모바일 화면 메뉴 설정 */
 header nav ul.mobile_menu {
@@ -130,12 +165,11 @@ header nav ul.mobile_menu {
 }
 /* 햄버거 메뉴 설정 */
 header nav ul.mobile_menu li ul {display: none;}
-header nav ul li a{}
 
 /* section */
 section {
     width: 100%;
-    height: 80%;
+    height: 85%;
     background-color: blue;
 }
 
@@ -260,7 +294,7 @@ article {
 /* footer */
 footer {
     width: 100%;
-    height: 10%;
+    height: 5%;
     background-color: green;
     padding: 20px;
 }
