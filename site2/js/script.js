@@ -254,7 +254,32 @@ let All_song = [
       path: "music/Midnight Snack Original Mix.mp3",
       // img: "img/img5.jpg",
       singer: "Purrple Cat"
-    }
+    },
+    {
+      name: "Good Days",
+      path: "music/Good Days.mp3",
+      // img: "img/img5.jpg",
+      singer: "Lofi Fruits Release"
+    },
+    {
+      name: "Spring Nights",
+      path: "music/Spring Nights.mp3",
+      // img: "img/img5.jpg",
+      singer: "Lofi Fruits Release"
+    },
+    {
+      name: "DREAMS  AFRICAN LOFI",
+      path: "music/DREAMS  AFRICAN LOFI.mp3",
+      // img: "img/img5.jpg",
+      singer: "MR YOHAN, AFRICAN LOFI"
+    },
+    {
+      name: "Chillwave Chronicles",
+      path: "music/Chillwave Chronicles.mp3",
+      // img: "img/img5.jpg",
+      singer: "HxR Lofi"
+    },
+
 
     
     
