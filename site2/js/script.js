@@ -279,6 +279,30 @@ let All_song = [
       // img: "img/img5.jpg",
       singer: "HxR Lofi"
     },
+    {
+      name: "Stan",
+      path: "music/Stan.mp3",
+      // img: "img/img5.jpg",
+      singer: "Lofi Fruits Music"
+    },
+    {
+      name: "Hazy Daydreams",
+      path: "music/Hazy Daydreams.mp3",
+      // img: "img/img5.jpg",
+      singer: "HxR Lofi"
+    },
+    {
+      name: "Gentle Ambient Music for Early Morning Yoga",
+      path: "music/Gentle Ambient Music for Early Morning Yoga.mp3",
+      // img: "img/img5.jpg",
+      singer: "Amojava Morning Vibes"
+    },
+    {
+      name: "Vol4 Track No3 Room in the Sea",
+      path: "music/Vol4 Track No3 Room in the Sea.mp3",
+      // img: "img/img5.jpg",
+      singer: "moogboy playlist"
+    },
 
 
     
