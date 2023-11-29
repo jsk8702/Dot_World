@@ -44,6 +44,14 @@ $(document).ready(function () {
 });
 
 
+// 햄버거 메뉴 리스트 마우스 휠로 내리기 기능
+const scrollContainer = document.querySelector('.nav_inner_menu > ul');
+
+scrollContainer.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    scrollContainer.scrollTop += e.deltaY;
+});
+
 
 // 뮤직박스 스크립트
 // 변수 설정
