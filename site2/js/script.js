@@ -27,7 +27,14 @@ $(document).ready(function () {
   $(".nav_inner_sub_menu").click(function(){
     $(".nav_inner_menu").removeClass("active");
     });
-
+  
+  // 사이트 소개를 클릭하면 햄버거 메뉴 전체가 사라진다.
+  // 현재 일반 .nav_inner_sub_main 로 클릭 설정하면 사이트 소개 li는
+  // 하단에 서브 ul, li 가 없어서 인식을 못한다. 그래서 별도로 클래스를 주고 직접 닫게 했다.
+  $(".nav_inner_sub_main_about").click(function(){
+    $(".nav_inner_menu").removeClass("active");
+    });
+    
 
 
 
