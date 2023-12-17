@@ -538,12 +538,7 @@ section {
   font-size: 16px;
   font-weight: normal;
 }
-/* .swiper .swiper-slide-title > h2 > em {
-  font-style: normal;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 4px;
-} */
+
 
 .swiper-slide .img_inside {
   display: flex;
@@ -585,6 +580,38 @@ section {
   border-top: 2px solid #fff;
   letter-spacing: 5px;
 }
+
+/* 슬라이드 변환 시간 SVG 이미지가 없어서 이미지는 안나옴  */
+/* 슬라이드 자동 변환 설정 */
+/* .autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 56px;
+  z-index: 110;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+} */
+/* 슬라이드 자동 변환 아이콘 이미지 변환 설정 */
+/* .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 110;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+} */
 
 
 

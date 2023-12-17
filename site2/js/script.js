@@ -467,10 +467,18 @@ function range_slider() {
 
 
 // swpier 기본 설정
+// 이미지 변환 시간 상태를 알리는 이미지는 못구해서 이건 이미지는 생략
+// const progressCircle = document.querySelector(".autoplay-progress svg");
+// const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000, // <<- 여기가 이미지 자동 변환에 걸리는 시간 설정(1000 = 1초)
+    disableOnInteraction: false
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -480,6 +488,12 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    }
+  }
 });
 
 // 이미지 로딩 지연(lazy loading) 설정
