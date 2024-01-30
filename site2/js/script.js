@@ -318,6 +318,12 @@ let All_song = [
       // img: "img/img5.jpg",
       singer: "moogboy playlist"
     },
+    {
+      name: "Santa Mariya",
+      path: "music/Santa Mariya.mp3",
+      // img: "img/img5.jpg",
+      singer: "Boubacar Traoré"
+    },
 
 
     
