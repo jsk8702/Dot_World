@@ -97,12 +97,6 @@ let All_song = [
         singer: "Cyberpunk 2077 OST"
     },
     {
-        name: "RESIST AND DISORDER",
-        path: "music/RESIST AND DISORDER.mp3",
-        // img: "img/img2.jpg",
-        singer: "Jason Charles Miller & Jamison Boaz"
-    },
-    {
         name: "Game of Thrones - House of the Dragon",
         path: "music/House of the Dragon Opening Theme.mp3",
         // img: "img/img3.jpg",
@@ -187,40 +181,10 @@ let All_song = [
       singer: "Cover by ChequerChequer"
     },
     {
-      name: "Take on Me",
-      path: "music/Take on Me.mp3",
-      // img: "img/img5.jpg",
-      singer: "a-ha"
-    },
-    {
-      name: "one way ticket",
-      path: "music/one way ticket.mp3",
-      // img: "img/img5.jpg",
-      singer: "eruption"
-    },
-    {
-      name: "Hotel California",
-      path: "music/Hotel California.mp3",
-      // img: "img/img5.jpg",
-      singer: "Eagles"
-    },
-    {
       name: "The Deli - 5:32PM",
       path: "music/532PM.mp3",
       // img: "img/img5.jpg",
       singer: "Dreamwave"
-    },
-    {
-      name: "Stayin Alive",
-      path: "music/Stayin Alive.mp3",
-      // img: "img/img5.jpg",
-      singer: "Bee Gees"
-    },
-    {
-      name: "Prince of Persia - Time Only Knows",
-      path: "music/Time Only Knows.mp3",
-      // img: "img/img5.jpg",
-      singer: "Cover by Alina Gingertail"
     },
     {
       name: "(FREE) lofi type beat - Deep In Ur Eyez",
