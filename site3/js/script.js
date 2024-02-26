@@ -64,4 +64,26 @@
 // 제이쿼리 설정
 $(document).ready(function () {
     
+    const slideContainer = $('.gallery_img_window');
+    const image = $('.images');
+    function resizeImage() {
+        const slideWidth = slideContainer.width();
+        const imageWidth = image.width();
+        const slideHeight = slideContainer.height();
+        const imageHeight = image.height();
+        if (imageWidth > slideWidth) {image.css('width', '95%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '90%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '85%');} 
+        else {image.css('width', '100%');}
+        
+
+        if (imageHeight > slideHeight) {image.css('height', '95%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '90%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '85%');} 
+        else {image.css('height', '100%');}
+
+    }
+        $(window).on('resize', resizeImage);
+        resizeImage();
+
 });
