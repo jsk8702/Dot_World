@@ -71,15 +71,15 @@ $(document).ready(function () {
         const imageWidth = image.width();
         const slideHeight = slideContainer.height();
         const imageHeight = image.height();
-        if (imageWidth > slideWidth) {image.css('width', '95%');} 
-        else if (imageWidth > slideWidth) {image.css('width', '90%');} 
-        else if (imageWidth > slideWidth) {image.css('width', '85%');} 
+        if (imageWidth > slideWidth) {image.css('width', '90%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '80%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '70%');} 
         else {image.css('width', '100%');}
         
 
-        if (imageHeight > slideHeight) {image.css('height', '95%');} 
-        else if (imageHeight > slideHeight) {image.css('height', '90%');} 
-        else if (imageHeight > slideHeight) {image.css('height', '85%');} 
+        if (imageHeight > slideHeight) {image.css('height', '90%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '80%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '70%');} 
         else {image.css('height', '100%');}
 
     }

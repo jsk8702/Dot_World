@@ -53,6 +53,9 @@ section {
   height: 90%;
   background-color: aquamarine;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 이미지 크기 자동 변환 실험 */
@@ -62,20 +65,19 @@ section {
 }
 .gallery_img {}
 .gallery_img_window {
-  width: 600px;
+  max-width: fit-content;
   height: 600px;
-  /* overflow: hidden; */
   background-color: cadetblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-sizing: border-box; */
+  overflow: hidden;
 }
 .gallery_img_window > img {
   display: block;
   border: none;
-  /* width: auto;
-  height: auto; */
+  margin: 0;
+  padding: 0;
 }
 
 /* footer 설정 */
