@@ -520,5 +520,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// 이미지 크기 자동 조정
+const slideContainer = $('.img_inside > a');
+    const image = $('.img_inside > a img');
+    function resizeImage() {
+        const slideWidth = slideContainer.width();
+        const imageWidth = image.width();
+        const slideHeight = slideContainer.height();
+        const imageHeight = image.height();
+        if (imageWidth > slideWidth) {image.css('width', '90%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '80%');} 
+        else if (imageWidth > slideWidth) {image.css('width', '70%');} 
+        else {image.css('width', '100%');}
+        
+
+        if (imageHeight > slideHeight) {image.css('height', '90%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '80%');} 
+        else if (imageHeight > slideHeight) {image.css('height', '70%');} 
+        else {image.css('height', '100%');}
+
+    }
+        $(window).on('resize', resizeImage);
+        resizeImage();
 
 
