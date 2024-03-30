@@ -288,15 +288,26 @@ let All_song = [
       // img: "img/img5.jpg",
       singer: "Boubacar Traoré"
     },
-
+    {
+      name: "Lonely",
+      path: "music/Lonely.mp3",
+      // img: "img/img5.jpg",
+      singer: "Purrple Cat"
+    },
+    {
+      name: "Rooftop Rendezvous",
+      path: "music/Rooftop Rendezvous.mp3",
+      // img: "img/img5.jpg",
+      singer: "Purrple Cat"
+    },
+    {
+      name: "Torn",
+      path: "music/Torn.mp3",
+      // img: "img/img5.jpg",
+      singer: "Purrple Cat"
+    },
 
     
-    
-
-    
-
-    
-
 
 ];
 
