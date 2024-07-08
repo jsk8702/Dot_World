@@ -117,6 +117,9 @@ section {
   box-sizing: border-box;
 }
 
+.about_content {
+  display: none;
+}
 
 
 /* footer 설정 */
