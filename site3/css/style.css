@@ -25,120 +25,31 @@ body {
 .test_home > a {display: block; width: 100%; height: 100%; text-align: center; line-height: 100px;}
 /* 임시박스 종료 */
 
-
-
-/* 전체 컨테이너 설정  */
+/* container 설정 */
 .container {
-    width: 100%;
-    height: 100%;
-    background: red;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    box-sizing: border-box;
-}
-
-
-
-/* header 설정 */
-header {
-  width: 100%;
-  /* height: 5%; */
+  width: auto;
   height: auto;
-  background-color: orange;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 25px; */
 }
 
-/* header 안에 PC 화면 메뉴 */
-nav {
+.container a {
   display: block;
-  width: 100%;
-  height: 100%;
-  /* background-color: red; */
+  max-width: 600px;
+  max-height: 800px;
+  background-color: blueviolet;
+  padding: 10px;
+  overflow: hidden;
 }
-nav > ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
+.container a img {
+  object-fit: contain;
+  background-color: blue;
   
 }
 
-nav > ul > li {
-  box-sizing: border-box;
-  overflow: hidden;
-}
 
-nav > ul > li > h3 {
-  background-color: aqua;
-  padding: 6px 10px 6px 10px ;
-  cursor: pointer;
-}
-
-/* header 안에 모바일 화면 메뉴 */
-.ham_menu {
-  display: block;
-}
-
-
-
-/* section 설정 */
-section {
-  width: 100%;
-  height: auto;
-  background-color: aquamarine;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 이미지 크기 자동 변환 실험 */
-.gallery {
-  width: auto;
-  height: auto;
-}
-.gallery_img {}
-.gallery_img_window {
-  max-width: fit-content;
-  height: 600px; /* 모바일 화면에서 수정하는 부분 */
-  background-color: cadetblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.gallery_img_window > img {
-  display: block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-}
-
-.about_content {
-  display: none;
-}
-
-
-/* footer 설정 */
-footer {
-  width: 100%;
-  /* height: 5%; */
-  height: auto;
-  background-color: green;
-}
-
-footer > address {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer > address > h4 {
-  padding: 2px;
-}
-
-
+/* 전체 컨테이너 설정  */
