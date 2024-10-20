@@ -91,16 +91,16 @@ let track = document.createElement('audio');
 // all song list
 let All_song = [
     {
-        name: "The Rebel Path Cello Version",
+        name: "Cyberpunk 2077 - The Rebel Path Cello Version",
         path: "music/The Rebel Path Cello Version.mp3",
         // img: "img/img1.jpg",
         singer: "Cyberpunk 2077 OST"
     },
     {
-        name: "Game of Thrones - House of the Dragon",
-        path: "music/House of the Dragon Opening Theme.mp3",
+        name: "HOMM II - Sorceress Town Theme on grand piano",
+        path: "music/Sorceress Town Theme on grand piano.mp3",
         // img: "img/img3.jpg",
-        singer: "Cover by Alina Gingertail"
+        singer: "Cover by Pani Fortepiano"
     },
     {
         name: "HOMM IV - Order Town Theme",
@@ -115,10 +115,10 @@ let All_song = [
         singer: "Cover by Dryante"
     },
     {
-      name: "HOMM 6 - Summer and Winter Plains",
-      path: "music/Summer and Winter Plains Game Soundtrack Mix.mp3",
-      // img: "img/img5.jpg",
-      singer: "Might & Magic Heroes 6 OST"
+        name: "HOMM 6 - Summer and Winter Plains",
+        path: "music/Summer and Winter Plains Game Soundtrack Mix.mp3",
+        // img: "img/img5.jpg",
+        singer: "Might & Magic Heroes 6 OST"
     },
     {
       name: "HOMM IV - Hope",
@@ -133,11 +133,10 @@ let All_song = [
       singer: "Old Gods Of Asgard"
     },
     {
-      name: "The Wellerman",
-      path: "music/The Wellerman Gingertail Cover.mp3",
+      name: "strangemoon",
+      path: "music/strangemoon.mp3",
       // img: "img/img5.jpg",
-      singer: "Cover by Alina Gingertail"
-    },
+      singer: "pluck sounds(Dreamwave)"},
     {
       name: "Tanz mit mir",
       path: "music/Tanz mit mir Gingertail Cover.mp3",
