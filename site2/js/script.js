@@ -127,27 +127,21 @@ let All_song = [
       singer: "Cover by Alina Gingertail"
     },
     {
-      name: "The Poet And The Muse",
-      path: "music/The Poet And The Muse.mp3",
-      // img: "img/img5.jpg",
-      singer: "Old Gods Of Asgard"
-    },
-    {
       name: "strangemoon",
       path: "music/strangemoon.mp3",
       // img: "img/img5.jpg",
-      singer: "pluck sounds(Dreamwave)"},
+      singer: "Dreamwave(pluck sounds)"},
     {
-      name: "Tanz mit mir",
-      path: "music/Tanz mit mir Gingertail Cover.mp3",
+      name: "Tabula Rasa",
+      path: "music/Tabula Rasa.mp3",
       // img: "img/img5.jpg",
-      singer: "Cover by Alina Gingertail"
+      singer: "Purrple Cat(Lofi Records)"
     },
     {
-      name: "Steel for Humans",
-      path: "music/Steel for Humans Extended Version.mp3",
+      name: "one last time",
+      path: "music/one last time.mp3",
       // img: "img/img5.jpg",
-      singer: "The Witcher 3 OST"
+      singer: "Dreamwave(.Uzu)"
     },
     {
       name: "I Really Want to Stay at Your House",
@@ -166,12 +160,6 @@ let All_song = [
       path: "music/Friendships.mp3",
       // img: "img/img5.jpg",
       singer: "Pascal Letoublon, Leony"
-    },
-    {
-      name: "Dancin (KRONO Remix)",
-      path: "music/Aaron Smith  Dancin KRONO Remix.mp3",
-      // img: "img/img5.jpg",
-      singer: "Aaron Smith"
     },
     {
       name: "HOMM IV - Floating Across Water",
