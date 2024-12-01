@@ -246,10 +246,10 @@ let All_song = [
       singer: "HxR Lofi"
     },
     {
-      name: "Stan",
-      path: "music/Stan.mp3",
+      name: "Heart of the Ocean",
+      path: "music/Heart of the Ocean.mp3",
       // img: "img/img5.jpg",
-      singer: "Lofi Fruits Music"
+      singer: "Purrple Cat - Oasis"
     },
     {
       name: "Hazy Daydreams",
