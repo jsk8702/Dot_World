@@ -2,18 +2,18 @@
 
 /* html, body setting */
 html, body {width: 100%; height: 100%;}
-body {
-  background-color: yellow;
-}
+
 
 
 /* container 설정 */
 .container {
-  width: 80%;
-  height: 90%;
-  margin: 10%;
-  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/1200x/ce/3e/47/ce3e4795e199e99a30034d5ebaef4beb.jpg");
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  position: no-repeat;
 }
-
 
 /* 전체 컨테이너 설정  */
