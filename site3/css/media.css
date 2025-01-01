@@ -5,12 +5,30 @@
 @media (max-width: 412px){
 
     
-    /* container 설정 */
-    .container {
-        width: 100%;
-        height: 100%;
-    }
+/* bg 설정 */
+.bg_img {background-size:cover;}
     
+    /* 임시주소 계시판 */
+.temp {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    background-color: cornflowerblue;
+    z-index: 1000;
+  }
+  .temp > h3 {
+    font-weight: bold;
+    color: green;
+    font-size: 14px;
+  }
+  .temp > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: antiquewhite;
+    margin-top: 6px;
+    font-size: 12px;
+  }
 
     
 }

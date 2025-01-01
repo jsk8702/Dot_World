@@ -5,15 +5,99 @@ html, body {width: 100%; height: 100%;}
 
 
 
-/* container 설정 */
-.container {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://i.pinimg.com/1200x/ce/3e/47/ce3e4795e199e99a30034d5ebaef4beb.jpg");
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-  position: no-repeat;
+/* bg 설정 */
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
 }
 
-/* 전체 컨테이너 설정  */
+.bg_img {
+/* background-image site: https://www.pixelstalk.net/3840x2160-wallpapers-hd-free-download/ */
+background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/3840x2160-Wallpaper-High-Quality.jpg");
+background-size: 100% 100%; 
+/* 이미지 자체 비율이 공백에서 차지하는 비율이다. 가로가 100% 니까 원래 공백을 모두 덥는다. 
+cover는 공백을 덥는 비율을 가로 세로 모두 넓히니까 이것보다 크다. cover는 그냥 100% 하는거랑 같고, 가로 측면만 늘려서 공백을 제거하려면 100% 100% 해주면 된다.*/
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 100%;
+}
+
+.bg_cover {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-color: rgba(0,0,0,0.5);
+}
+
+/* 임시주소 계시판 */
+.temp {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  border: 3px solid wheat;
+  display: block;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color: cornflowerblue;
+  z-index: 1000;
+}
+.temp > h3 {
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+}
+.temp > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: antiquewhite;
+  margin-top: 6px;
+  font-size: 16px;
+}
+.temp > ul > li:first-child > a {color: orangered;} 
+.temp > ul > li:last-child > a {color: red;} 
+
+
+
+ /* container 설정 */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* header 설정 */
+header {
+width: 100%;
+height: 10%;
+background-color: aqua;
+}
+
+/* section 설정정 */
+section {
+width: 100%;
+height: auto;
+/* 하부 객체인 article의 높이 따라 늘어나고 줄어든다. */
+background-color: yellowgreen;
+padding: 50px 0;
+overflow: hidden;
+}
+article {
+width: 100%;
+height: 1080px;
+/* 어짜피 .bg 가 fixed로 고정되어 있어서 여기서 높이를 더 높여줘도 이상없이 아래로 이상없이 내려간다. */
+background-color: brown;
+}
+
+/* footer 설정 */
+footer {
+width: 100%;
+height: 10%;
+background-color: blueviolet;
+}
