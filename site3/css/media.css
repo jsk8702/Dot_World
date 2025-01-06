@@ -8,6 +8,7 @@
 /* bg 설정 */
 .bg_img {background-size:cover;}
     
+
     /* 임시주소 계시판 */
 .temp {
     width: 150px;
@@ -29,6 +30,20 @@
     margin-top: 6px;
     font-size: 12px;
   }
+
+
+  /* ham_menu 설정 */
+header .ham_menu {
+  display: block;
+  width: 20%;
+}
+/* ham_menu 설정 끝 */
+/* header NAV 설정 */
+header nav {
+  display: block;
+  width: 80%;
+}
+/* header NAV 설정 끝 */
 
     
 }
