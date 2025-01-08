@@ -37,7 +37,7 @@ html, body {width: 100%; height: 100%;}
 /* 임시주소 계시판 */
 .temp {
   position: fixed;
-  top: 0%;
+  top: 50%;
   right: 0%;
   border: 3px solid wheat;
   display: block;
@@ -78,8 +78,8 @@ html, body {width: 100%; height: 100%;}
 header {
   display: flex;
   width: 100%;
-  height: 10%;
-  background-color: aqua;
+  height: 5%;
+  /* background-color: aqua; */
 }
 /* ham_menu 설정 */
 header .ham_menu {
@@ -89,21 +89,80 @@ header .ham_menu {
   background-color: red;
 }
 /* ham_menu 설정 끝 */
+
 /* header NAV 설정 */
 header nav {
-  display: block;
+  position: fixed;;
   width: 100%;
-  height: 100%;
-  background-color: blue;
+  height: 5%;
+  display: flex;
 }
 /* header NAV 설정 끝 */
+/* header 메인 타이틀 */
+.nav_left {
+  width: 50%;
+  height: 100%;
+  padding-left: 2%;
+}
+.nav_left > a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav_title {
+  color: #aaa;
+}
+/* header 메인 타이틀 끝 */
+/* header 메인 메뉴 */
+.nav_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  padding-right: 2%;
+  /* background-color: blue; */
+} 
+.nav_menu_main {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  /* background-color: red; */
+  border: 1px solid yellow;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+.nav_menu_main li {
+  width: 20%;
+  height: 100%;
+}
+.nav_menu_main li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.nav_menu_main li a h3 {
+  color: #fff;
+}
+/* header 메인 메뉴 끝 */
+/* header 서브 메뉴 */
+.nav_menu_sub {
+  display: none;
+}
+/* header 서브 메뉴 끝 */
 /* header 설정 끝 */
 
 
 /* section 설정 */
 section {
   width: 100%;
-  height: auto;
+  height: 200%;
   /* 하부 객체인 article의 높이 따라 늘어나고 줄어든다. */
   background-color: yellowgreen;
   padding: 50px 0;
