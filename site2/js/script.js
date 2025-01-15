@@ -258,10 +258,10 @@ let All_song = [
       singer: "HxR Lofi"
     },
     {
-      name: "Gentle Ambient Music for Early Morning Yoga",
-      path: "music/Gentle Ambient Music for Early Morning Yoga.mp3",
+      name: "Dreamsynth Chillsynth  Final Horizon",
+      path: "music/Dreamsynth Chillsynth  Final Horizon.mp3",
       // img: "img/img5.jpg",
-      singer: "Amojava Morning Vibes"
+      singer: "Synthblade Tunes"
     },
     {
       name: "Vol4 Track No3 Room in the Sea",
@@ -270,10 +270,10 @@ let All_song = [
       singer: "moogboy playlist"
     },
     {
-      name: "Santa Mariya",
-      path: "music/Santa Mariya.mp3",
+      name: "90s Boom Bap Chill Jazz x LoFi Type Beat  Hustle",
+      path: "music/90s Boom Bap Chill Jazz x LoFi Type Beat  Hustle.mp3",
       // img: "img/img5.jpg",
-      singer: "Boubacar Traoré"
+      singer: "Rama Low"
     },
     {
       name: "Lonely",
