@@ -86,4 +86,7 @@ $(document).ready(function () {
         $(window).on('resize', resizeImage);
         resizeImage();
 
+        
+
 });
+

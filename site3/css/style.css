@@ -31,7 +31,7 @@ html, body {width: 100%; height: 100%;}
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.2);
 }
 
 /* 임시주소 계시판 */
@@ -127,11 +127,18 @@ header nav {
 } 
 .nav_menu_main {
   width: 60%;
-  height: 100%;
+  height: auto;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   /* background-color: red; */
-  border: 1px solid yellow;
+  /* clip-path: polygon(3% 0%, 100% 0, 100% 60%, 97% 100%, 0 100%, 0 40%); */
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  /* 다각형 박스를 가능하게 해준다. 모형으로 실험하고 코드 따올수 있다.
+  주소: https://bennettfeely.com/clippy/ */
+  border: 1.5px solid yellow;
+  border-left: none;
+  border-right: none;
   box-sizing: border-box;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
@@ -165,13 +172,20 @@ header nav {
   display: none;
 }
 /* header 서브 메뉴 끝 */
+
+/* 검색 창 설정(테스트 중) */
+.serch_window {
+  display: none;
+}
+/* 검색 창 설정 끝 */
+
 /* header 설정 끝 */
 
 
 /* section 설정 */
 section {
   width: 100%;
-  height: 200%;
+  height: auto;
   /* 하부 객체인 article의 높이 따라 늘어나고 줄어든다. */
   background-color: yellowgreen;
   padding: 50px 0;
@@ -184,6 +198,16 @@ article {
   background-color: brown;
 }
 /* section 설정 끝 */
+
+/* 갤러리 창 설정(테스트 중) */
+.art_window {
+  display: none;
+}
+/* 갤러리 창 설정 끝 */
+
+
+
+
 
 
 /* footer 설정 */
