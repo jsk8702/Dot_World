@@ -293,6 +293,12 @@ let All_song = [
       // img: "img/img5.jpg",
       singer: "Purrple Cat"
     },
+    {
+      name: "Lunar Drive",
+      path: "music/Lunar Drive.mp3",
+      // img: "img/img5.jpg",
+      singer: "Mondo Loops"
+    },
 
     
 
